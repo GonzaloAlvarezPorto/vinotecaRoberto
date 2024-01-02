@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+}
+
+header{
+    height: 140px;
+}
+
+.cabecera {
+    background-color: #351a02;
+    padding:0px;
+    margin:0px;
+    height: 140px;
+}
+
+.cabecera__titulo {
+    background-image: url("../media/logoCabecera2.jpg");
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    height: 100px;
+}
+
+.cabecera__titulo--estilo {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+    text-shadow: 3px 3px 4px black;
+}
+
+.titulo__redes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.redes__iconos{
+    color:white;
+    display: flex;
+    height: 50%;
+}
+
+.iconos__texto{
+    color:white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.iconos__boton {
+    width: 25px;
+}
+
+.cabecera__menu {
+    background-image: url("../media/fondoColorRoble.jpg");
+    background-size: cover;
+    margin:0px;
+    height:40px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    flex-wrap: wrap;
+    margin:0px;
+    width: 100%;
+}
+
+.menu__listado {
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+
+.listado__items {
+    display: flex;
+    padding:0;
+    text-align: center;
+    width: 20%;
+}
+
+.listado__items a {
+    text-decoration: none;
+    padding: 5px 0 0 0;
+    color: white;
+    font: bold;
+    text-shadow: 3px 3px 4px black;
+    width: 100%;
+    font-size: 22px;
+}
+
+.principal{
+    background-image: url("../media/intro.jpg");
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+}
+
+.principal__cuerpo {
+    min-height: 650px;
+    width: 100%;
+}
+
+.cuerpo__texto {
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 3px 3px 4px black;
+}
+
+.cuerpo__artista {
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 4px black;
+}
+
+.principal__catalogo {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.catalogo__producto{
+    margin:0;
+    padding:0;
+}
+
+.producto__texto {
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    margin:0;
+    text-shadow: 3px 3px 4px black;
+}
+
+.producto__enlace {
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+.producto__img {
+    height: 120px;
+    margin:0;
+    padding:0;
+}
+
+.cuerpo__proveedor {
+    width: 100%;
+    height: 220px;
+    margin:0;
+    padding:0;
+}
+
+.proveedor__info {
+    width: 100%;
+    height: 220px;
+    margin:0;
+    padding:0;
+    border-bottom: solid 1px white ;
+}
+
+.proveedor__media{
+    height: 220px;
+    margin:0;
+    padding:15px;
+    padding-top: 35px;
+}
+
+.media__enlace {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+.media__img{
+    height: 120px;
+    margin:0;
+    padding:0;
+}
+
+.proveedor__datos{
+    margin:0;
+    padding:15px;
+    color:white;
+    text-shadow: 3px 3px 4px black;
+}
+
+.proveedor__descripcion {
+    margin:0;
+    padding:15px;
+    color:white;
+    text-shadow: 3px 3px 4px black;
+}
+
+.cuerpo__ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.principal__formulario {
+    padding: 30px;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+}
+
+.formulario__label {
+    padding: 5px;
+}
+
+.formulario__textarea {
+    margin: 5px;
+}
+
+.pieDePagina {
+    background-image: url("../media/fondoColorRoble.jpg");
+    background-size: cover;
+    margin:0;
+    padding:0;
+    height: 38px;
+}
+
+.pieDePagina__contenedor{
+    margin:0;
+    padding:0;
+    height: 38px;
+}
+
+.contenedor__listado {
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    height: 38px;
+}
+
+.listado__textoPieDePagina {
+    display:flex;
+    text-decoration: none;
+    color: white;
+    font: bold;
+    text-shadow: 3px 3px 4px black;
+    height: 38px;
+    padding:0px;
+    padding-top: 8px;
+}
+
+.listado__textoPieDePagina p{
+    text-align: center;
+    width: 100%;
+    margin:0;
+    padding:0px;
+}
+
+@media (max-width: 750px){
+    .listado__items a {
+        font-size: 16px;
+        padding-top: 9px;
+    }
+
+    .media__img{
+        height: 80px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+
+    h6{
+        font-size: 12px;
+    }
+
+    .proveedor__descripcion{
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 555px){
+    .listado__items a {
+        font-size: 11px;
+        padding-top: 12px;
+    }
+
+    .principal__formulario{
+        font-size: 12px;
+    }
+
+    .listado__textoPieDePagina {
+        font-size:10px;
+    }
+
+    .media__img{
+        height: 30px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+
+    h6{
+        font-size: 8px;
+    }
+
+    .proveedor__descripcion{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 375px){
+    .listado__items a {
+        font-size: 8px;
+    }
+
+    .cuerpo__texto{
+        font-size: 11px;
+    }
+    
+    .cabecera__titulo--estilo{
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .listado__textoPieDePagina {
+        font-size:8px;
+    }
+
+    .principal__formulario{
+        font-size: 10px;
+    }
+
+    .producto__texto {
+        font-size: 13px;
+    }
+
+    .producto__img {
+        height: 80px;
+    }
+
+    .media__img{
+        height: 30px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+
+    h6{
+        font-size: 8px;
+    }
+
+    .proveedor__descripcion{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 288px) {
+    .cabecera__titulo--estilo{
+        font-size: 0px;
+    }
+
+    .listado__items a {
+        font-size: 8px;
+    }
+
+    .listado__textoPieDePagina {
+        font-size:7px;
+    }
+
+    .cuerpo__texto{
+        font-size: 9px;
+    }
+
+    .producto__texto {
+        font-size: 7px;
+    }
+
+    .producto__img {
+        height: 50px;
+    }
+
+    .media__img{
+        height: 30px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+
+    h6{
+        font-size: 8px;
+    }
+
+    .proveedor__descripcion{
+        font-size: 10px;
+    }
+    
+}
