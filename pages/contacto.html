@@ -68,15 +68,30 @@
     <main class="container-fluid principal">
         <section class="principal__cuerpo">
             <form class="principal__formulario" action="#">
-                <label class="formulario__label" for="nombre">Nombre</label>
-                <input type="text" /><br /><br />
-                <label class="formulario__label" for="apellidos">Apellidos</label>
-                <input type="text" /><br /><br />
-                <label class="formulario__label" for="mail">E-mail</label>
-                <input type="email" /><br /><br />
-                <label class="formulario__label" for="textoConsulta">Envianos tu consulta y a la brevedad responderemos</label><br />
-                <textarea class="formulario__textarea" rows="5" cols="30"></textarea><br /><br />
-                <input type="submit" value="Enviar consulta">
+                <div class="formulario__cajas row">
+                    <label class="formulario__label col-1" for="nombre">Nombre</label>
+                    <input class="col-4" type="text" />
+                </div>
+                <div class="formulario__cajas row">
+                    <label class="formulario__label col-1" for="apellidos">Apellidos</label>
+                    <input class="col-4" type="text" />
+                </div>
+                <div class="formulario__cajas row">
+                    <label class="formulario__label col-1" for="mail">E-mail</label>
+                    <input class="col-4" type="email" />
+                </div>
+                <div class="formulario__cajas row">
+                    <label class="formulario__label col-5" for="textoConsulta">
+                        Envianos tu consulta y a la brevedad responderemos
+                    </label>
+                </div>
+                <div class="formulario__cajas row">  
+                    <textarea class="formulario__textarea col-5" rows="5" cols="2">
+                    </textarea>
+                </div>
+                <div class="formulario__cajas row">
+                    <input class="col-2" type="submit" value="Enviar consulta">
+                </div>
             </form>
         </section>
     </main>

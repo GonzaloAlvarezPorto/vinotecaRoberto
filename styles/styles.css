@@ -104,6 +104,23 @@ header{
 .principal__cuerpo {
     min-height: 650px;
     width: 100%;
+    padding:0;
+    margin:0;
+}
+
+.cuerpo__ubicacion{
+    width: 100%;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion__mapa{
+    width: 50%;
+    padding:0;
+    margin:0;
 }
 
 .cuerpo__texto {
@@ -200,13 +217,7 @@ header{
     text-shadow: 3px 3px 4px black;
 }
 
-.cuerpo__ubicacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+
 
 .principal__formulario {
     padding: 30px;
@@ -218,8 +229,8 @@ header{
     padding: 5px;
 }
 
-.formulario__textarea {
-    margin: 5px;
+.formulario__cajas{
+    padding-bottom: 10px;
 }
 
 .pieDePagina {
