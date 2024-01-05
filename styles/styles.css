@@ -4,15 +4,11 @@
     font-family: 'El Messiri', sans-serif;
 }
 
-header{
-    height: 140px;
-}
 
 .cabecera {
     background-color: #351a02;
     padding:0px;
     margin:0px;
-    height: 140px;
 }
 
 .cabecera__titulo {
@@ -62,7 +58,6 @@ header{
     background-image: url("../media/fondoColorRoble.jpg");
     background-size: cover;
     margin:0px;
-    height:40px;
     display: flex;
     justify-content: space-around;
     text-decoration: none;
@@ -86,7 +81,7 @@ header{
 
 .listado__items a {
     text-decoration: none;
-    padding: 5px 0 0 0;
+    padding: 3px 0 3px 0;
     color: white;
     font: bold;
     text-shadow: 3px 3px 4px black;
@@ -263,8 +258,7 @@ header{
     font: bold;
     text-shadow: 3px 3px 4px black;
     height: 100%;
-    padding:0px;
-    
+    padding: 3px 0 3px 0;
 }
 
 .textoPieDePagina__parrafo{
@@ -300,7 +294,7 @@ header{
 @media (max-width: 750px){
     .listado__items a {
         font-size: 16px;
-        padding-top: 9px;
+        
     }
 
     .media__img{
@@ -324,7 +318,6 @@ header{
 @media (max-width: 555px){
     .listado__items a {
         font-size: 11px;
-        padding-top: 12px;
     }
 
     .principal__formulario{
