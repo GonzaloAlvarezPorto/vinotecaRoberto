@@ -227,13 +227,12 @@ header{
     background-size: cover;
     margin:0;
     padding:0;
-    height: 38px;
 }
 
 .pieDePagina__contenedor{
     margin:0;
     padding:0;
-    height: 38px;
+    height: 100%;
 }
 
 .contenedor__listado {
@@ -243,7 +242,7 @@ header{
     justify-content: center;
     margin:0;
     padding:0;
-    height: 38px;
+    height: 100%;
 }
 
 .listado__textoPieDePagina {
@@ -252,7 +251,7 @@ header{
     color: white;
     font: bold;
     text-shadow: 3px 3px 4px black;
-    height: 38px;
+    height: 100%;
     padding:0px;
     
 }
@@ -262,21 +261,29 @@ header{
     width: 100%;
     margin:0;
     padding:0;
-    padding-top: 8px;
 }
 
-.textoPieDePagina__parrafoMasImagen{
-    text-align: center;
-    width: 100%;
-    margin:0;
-    padding:0;
+.listado__textoDelLogo{
+    text-align: right;
+    margin-right: 10px;
 }
 
-.listado__textoPieDePagina img{
-    height: 100%;
+.listado__logoMW {
+    display: flex;
     padding:0;
     margin: 0;
     text-decoration: none;
+}
+
+.logoMW__img{
+    height: 100%;
+    width: 100%;
+    background-image: url(../media/DeMar_Designs_Wilde_img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:0;
+    padding: 0;
+    
 }
 
 @media (max-width: 750px){
