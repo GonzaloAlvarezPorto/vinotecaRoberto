@@ -1,0 +1,274 @@
+.principal {
+    background-image: $imagenDeFondo;
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+
+    .principal__cuerpo {
+        min-height: 650px;
+        width: 100%;
+        @include niPaddingNiMargin(0, 0);
+
+        .cuerpo__ubicacion {
+            width: 100%;
+            @include niPaddingNiMargin(0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .ubicacion__mapa {
+                width: 50%;
+                @include niPaddingNiMargin(0, 0);
+            }
+        }
+
+        .cuerpo__texto {
+            padding: 20px 50px 0px 50px;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            text-shadow: 3px 3px 4px black;
+        }
+
+        @media (max-width: 375px) {
+            .cuerpo__texto {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 288px) {
+            .cuerpo__texto {
+                font-size: 9px;
+            }
+        }
+
+        .cuerpo__artista {
+            width: 85%;
+            font-size: 14px;
+            padding: 30px;
+            color: rgb(201, 201, 201);
+            text-align: right;
+            text-shadow: 3px 3px 4px black;
+        }
+
+        .cuerpo__proveedor {
+            width: 100%;
+            @include niPaddingNiMargin(0, 0);
+
+            .proveedor__info {
+                width: 100%;
+                @include niPaddingNiMargin(0, 0);
+                border-bottom: solid 1px white;
+            }
+
+            .proveedor__media {
+                margin: 0;
+                padding: 15px;
+
+                .media__enlace {
+                    width: 100%;
+                    @include niPaddingNiMargin(0, 0);
+                }
+
+                .media__img {
+                    height: map-get($fotosGalerias , alto);
+                    margin: map-get($fotosGalerias , margen);
+                    padding: map-get($fotosGalerias , relleno);
+                }
+
+                @media (max-width: 750px) {
+                    .media__img {
+                        height: 130px;
+                    }
+                }
+
+                @media (max-width: 555px) {
+                    .media__img {
+                        height: 80px;
+                    }
+                }
+
+                @media (max-width: 375px) {
+                    .media__img {
+                        height: 65px;
+                    }
+                }
+
+                @media (max-width: 288px) {
+                    .media__img {
+                        height: 60px;
+                    }
+                }
+            }
+
+            .proveedor__datos {
+                margin: 0;
+                padding: 15px;
+                color: white;
+                text-shadow: 3px 3px 4px black;
+            }
+
+            @media (max-width: 750px) {
+                h4 {
+                    font-size: 16px;
+                }
+
+                h6 {
+                    font-size: 12px;
+                }
+            }
+
+            @media (max-width: 555px) {
+                h4 {
+                    font-size: 10px;
+                }
+
+                h6 {
+                    font-size: 8px;
+                }
+            }
+
+            @media (max-width: 375px) {
+                h4 {
+                    font-size: 10px;
+                }
+
+                h6 {
+                    font-size: 8px;
+                }
+            }
+
+            @media (max-width: 288px) {
+                h4 {
+                    font-size: 10px;
+                }
+
+                h6 {
+                    font-size: 8px;
+                }
+            }
+
+            .proveedor__descripcion {
+                margin: 0;
+                padding: 15px;
+                color: white;
+                text-shadow: 3px 3px 4px black;
+            }
+
+            @media (max-width: 750px) {
+                .proveedor__descripcion {
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width: 555px) {
+                .proveedor__descripcion {
+                    font-size: 10px;
+                }
+            }
+
+            @media (max-width: 375px) {
+                .proveedor__descripcion {
+                    font-size: 10px;
+                }
+            }
+
+            @media (max-width: 288px) {
+                .proveedor__descripcion {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .principal__catalogo {
+        width: 100%;
+        @include niPaddingNiMargin(0, 0);
+        padding-top: 20px;
+
+        .catalogo__producto {
+            @include niPaddingNiMargin(0, 0);
+
+            .producto__texto {
+                color: white;
+                text-align: center;
+                padding-top: 5px;
+                margin: 0;
+                text-shadow: 3px 3px 4px black;
+            }
+
+            @media (max-width: 375px) {
+                .producto__texto {
+                    font-size: 13px;
+                }
+            }
+
+            @media (max-width: 288px) {
+                .producto__texto {
+                    font-size: 7px;
+                }
+            }
+
+            .producto__enlace {
+                @include niPaddingNiMargin(0, 0);
+                text-align: center;
+            }
+
+            .producto__img {
+                height: map-get($fotosGalerias , alto);
+                margin: map-get($fotosGalerias , margen);
+                padding: map-get($fotosGalerias , relleno);
+            }
+
+            @media (max-width: 375px) {
+                .producto__img {
+                    height: 80px;
+                }
+            }
+
+            @media (max-width: 288px) {
+                .producto__img {
+                    height: 50px;
+                }
+            }
+
+            @media (max-width: 375px) {
+                .media__img {
+                    height: 30px;
+                }
+            }
+
+            @media (max-width: 288px) {
+                .media__img {
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .principal__formulario {
+        padding: 30px;
+        color: white;
+        text-shadow: 3px 3px 4px black;
+
+        .formulario__label {
+            padding: 5px;
+        }
+
+        .formulario__cajas {
+            padding-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 555px) {
+        .principal__formulario {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .principal__formulario {
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.pieDePagina {
+    background-image:$imagenBarra;
+    background-size: cover;
+    @include niPaddingNiMargin(0,0);
+
+    .pieDePagina__contenedor {
+        height: 100%;
+        @include niPaddingNiMargin(0,0);
+
+        .contenedor__listado {
+            display: flex;
+            text-decoration: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            @include niPaddingNiMargin(0,0);
+            height: 100%;
+
+
+            .listado__textoPieDePagina {
+                display: flex;
+                text-decoration: none;
+                color: white;
+                font: bold;
+                text-shadow: 3px 3px 4px black;
+                height: 100%;
+                padding: 7px 0 7px 0;
+
+                .textoPieDePagina__parrafo {
+                    text-align: center;
+                    width: 100%;
+                    @include niPaddingNiMargin(0,0);
+                }
+            }
+
+            @media (max-width: 555px) {
+                .listado__textoPieDePagina {
+                    font-size: 10px;
+                }
+            }
+
+            @media (max-width: 375px) {
+                .listado__textoPieDePagina {
+                    font-size: 8px;
+                }
+            }
+
+            @media (max-width: 288px) {
+                .listado__textoPieDePagina {
+                    font-size: 7px;
+                }
+            }
+
+            .listado__logoMW {
+                display: flex;
+                @include niPaddingNiMargin(0,0);
+                text-decoration: none;
+
+                .logoMW__img {
+                    height: 100%;
+                    width: 100%;
+                    background-image: $logoMW;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    @include niPaddingNiMargin(0,0);
+                    background-position-x: left;
+                }
+            }
+        }
+    }
+}

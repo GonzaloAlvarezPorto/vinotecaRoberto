@@ -1,0 +1,134 @@
+.cabecera {
+    background-color: #351a02;
+    @include niPaddingNiMargin(0,0);
+    
+
+    .cabecera__titulo {
+        background-image: $imagenCabecera;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        height: 100px;
+        
+
+        .cabecera__titulo--estilo {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 60px;
+            text-shadow: 3px 3px 4px black;
+        }
+
+        @media (max-width: 375px) {
+            .cabecera__titulo--estilo {
+                font-size: 50px;
+                margin-top: 30px;
+            }
+        }
+        
+        @media (max-width: 288px) {
+            .cabecera__titulo--estilo {
+                font-size: 0px;
+            }
+        }
+
+        .titulo__redes {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: start;
+            justify-content: center;
+            margin-top: 15px;
+            position: fixed;
+            
+
+            .redes__iconos {
+                color: white;
+                display: flex;
+                height: 50%;
+                background-color: #351a02;
+                border-radius: 15px;
+                padding-bottom: 3px;
+
+                .iconos__texto {
+                    color: white;
+                    text-decoration: none;
+                    align-items: center;
+                    
+                    .iconos {
+                        width: 25px;
+                    }
+
+                    .iconos__facebook{
+                        @extend .iconos;
+                    }
+
+                    .iconos__instagram {
+                        @extend .iconos;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .cabecera__menu {
+        background-image: $imagenBarra;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        flex-wrap: wrap;
+        margin: 0px;
+        width: 100%;
+
+        .menu__listado {
+            @include niPaddingNiMargin(0,0);
+            width: 100%;
+
+            .listado__items {
+                display: flex;
+                padding: 0;
+                text-align: center;
+                width: 20%;
+            }
+
+            .listado__items a {
+                text-decoration: none;
+                padding: 3px 0 3px 0;
+                color: white;
+                font: bold;
+                text-shadow: 3px 3px 4px black;
+                width: 100%;
+                font-size: 22px;
+            }
+
+            @media (max-width: 750px) {
+                .listado__items a {
+                    font-size: 16px;
+
+                }
+
+                @media (max-width: 555px) {
+                    .listado__items a {
+                        font-size: 11px;
+                    }
+                }
+
+                @media (max-width: 375px) {
+                    .listado__items a {
+                        font-size: 8px;
+                    }
+                }
+
+                @media (max-width: 288px) {
+                    .listado__items a {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
