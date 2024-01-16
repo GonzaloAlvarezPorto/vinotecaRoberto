@@ -49,17 +49,25 @@
   color: white;
   display: flex;
   height: 50%;
-  background-color: #351a02;
-  border-radius: 15px;
-  padding-bottom: 3px;
 }
 .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto {
   color: white;
   text-decoration: none;
   align-items: center;
 }
-.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook {
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook {
   width: 25px;
+  border-radius: 15px;
+  padding-bottom: 3px;
+}
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook {
+  background-color: #0243cf;
+}
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram {
+  background-color: #b9029b;
+}
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp {
+  background-color: #4fd800;
 }
 .cabecera .cabecera__menu {
   background-image: url("../media/fondoColorRoble.jpg");

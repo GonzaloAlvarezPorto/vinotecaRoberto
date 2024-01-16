@@ -43,14 +43,11 @@
             margin-top: 15px;
             position: fixed;
             
-
             .redes__iconos {
                 color: white;
                 display: flex;
                 height: 50%;
-                background-color: #351a02;
-                border-radius: 15px;
-                padding-bottom: 3px;
+                
 
                 .iconos__texto {
                     color: white;
@@ -59,14 +56,24 @@
                     
                     .iconos {
                         width: 25px;
+                        border-radius: 15px;
+                        padding-bottom: 3px;
+                
                     }
 
                     .iconos__facebook{
                         @extend .iconos;
+                        background-color: #0243cf;
                     }
 
                     .iconos__instagram {
                         @extend .iconos;
+                        background-color: #b9029b;
+                    }
+
+                    .iconos__whatsapp{
+                        @extend .iconos;
+                        background-color: #4fd800;
                     }
                 }
 
