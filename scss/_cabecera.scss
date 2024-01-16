@@ -1,7 +1,7 @@
 .cabecera {
     background-color: #351a02;
-    @include niPaddingNiMargin(0,0);
-    
+    @include niPaddingNiMargin(0, 0);
+
 
     .cabecera__titulo {
         background-image: $imagenCabecera;
@@ -10,7 +10,7 @@
         background-repeat: no-repeat;
         margin: 0;
         height: 100px;
-        
+
 
         .cabecera__titulo--estilo {
             color: white;
@@ -27,7 +27,7 @@
                 margin-top: 30px;
             }
         }
-        
+
         @media (max-width: 288px) {
             .cabecera__titulo--estilo {
                 font-size: 0px;
@@ -42,26 +42,26 @@
             justify-content: center;
             margin-top: 15px;
             position: fixed;
-            
+
             .redes__iconos {
                 color: white;
                 display: flex;
                 height: 50%;
-                
+
 
                 .iconos__texto {
                     color: white;
                     text-decoration: none;
                     align-items: center;
-                    
+
                     .iconos {
                         width: 25px;
                         border-radius: 15px;
                         padding-bottom: 3px;
-                
+
                     }
 
-                    .iconos__facebook{
+                    .iconos__facebook {
                         @extend .iconos;
                         background-color: #0243cf;
                     }
@@ -71,7 +71,7 @@
                         background-color: #b9029b;
                     }
 
-                    .iconos__whatsapp{
+                    .iconos__whatsapp {
                         @extend .iconos;
                         background-color: #4fd800;
                     }
@@ -92,7 +92,7 @@
         width: 100%;
 
         .menu__listado {
-            @include niPaddingNiMargin(0,0);
+            @include niPaddingNiMargin(0, 0);
             width: 100%;
 
             .listado__items {
