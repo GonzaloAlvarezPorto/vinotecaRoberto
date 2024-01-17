@@ -62,12 +62,24 @@
 }
 .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook {
   background-color: #0243cf;
+  transition: 0.3s;
+}
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook:hover {
+  transform: scale(1.2);
 }
 .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram {
   background-color: #b9029b;
+  transition: 0.3s;
+}
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram:hover {
+  transform: scale(1.2);
 }
 .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp {
+  transition: 0.3s;
   background-color: #4fd800;
+}
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp:hover {
+  transform: scale(1.2);
 }
 .cabecera .cabecera__menu {
   background-image: url("../media/fondoColorRoble.jpg");
