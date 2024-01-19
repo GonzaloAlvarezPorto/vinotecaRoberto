@@ -2,52 +2,27 @@
     background-color: #351a02;
     @include niPaddingNiMargin(0, 0);
 
-
     .cabecera__titulo {
         background-image: $imagenCabecera;
         background-position: bottom;
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
-        height: 100px;
-
-
-        .cabecera__titulo--estilo {
-            color: white;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 20px;
-            font-size: 60px;
-            text-shadow: 3px 3px 4px black;
-        }
-
-        @media (max-width: 375px) {
-            .cabecera__titulo--estilo {
-                font-size: 50px;
-                margin-top: 30px;
-            }
-        }
-
-        @media (max-width: 288px) {
-            .cabecera__titulo--estilo {
-                font-size: 0px;
-            }
-        }
+        height: 40px;
 
         .titulo__redes {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: start;
+            flex-direction: row;
             justify-content: center;
-            margin-top: 8px;
+            height: 40px;
+            margin: 0px;
+            padding: 10px 0 10px 10px;
             position: fixed;
 
             .redes__iconos {
                 color: white;
                 display: flex;
                 height: 50%;
-
 
                 .iconos__texto {
                     color: white;
@@ -56,41 +31,99 @@
 
                     .iconos {
                         width: 25px;
-                        border-radius: 15px;
                         padding-bottom: 3px;
-                        border: solid 2px white;
-
+                        padding-right: 5px;
                     }
 
                     .iconos__facebook {
                         @extend .iconos;
-                        background-color: #0243cf;
-                        transition: 0.3s;
-                        &:hover{
+
+                        &:hover {
                             transform: scale(1.2);
                         }
                     }
 
                     .iconos__instagram {
                         @extend .iconos;
-                        background: linear-gradient(90deg, rgba(232,255,0,1) 0%, rgba(255,0,0,1) 34%, rgba(244,0,255,1) 61%, rgba(142,0,207,1) 100%);
-                        transition: 0.3s;
-                        &:hover{
+
+                        &:hover {
                             transform: scale(1.2);
                         }
                     }
 
                     .iconos__whatsapp {
                         @extend .iconos;
-                        transition: 0.3s;
-                        background-color: #4fd800;
-                        &:hover{
+
+                        &:hover {
                             transform: scale(1.2);
                         }
                     }
-                }
 
+                    @media (max-width: 375px) {
+                        .iconos {
+                            width: 15px;
+                        }
+                    }
+                }
             }
+        }
+
+        @media (max-width: 375px) {
+            .titulo__redes {
+                @include niPaddingNiMargin(0, 0);
+                display: flex;
+                flex-direction: row;
+                height: 20px;
+                padding-left: 10px;
+            }
+        }
+
+        .titulo__vacia{
+            @include niPaddingNiMargin(0, 0);
+            height: 40px;
+
+        }
+        
+        .titulo__vacia {
+            @include niPaddingNiMargin(0, 0);
+            height: 20px;
+        }
+
+        .titulo__insignia {
+            @include niPaddingNiMargin(0, 0);
+            height: 40px;
+
+            .insignia__img {
+                @include niPaddingNiMargin(0, 0);
+                height: 40px;
+                position: fixed;
+                padding-left: 10%;
+                
+                &:hover {
+                    transform: scale(1.1);
+                    transform-origin: top;
+                }
+            }
+
+            @media (max-width:375px) {
+                .insignia__img {
+                    height: 20px;
+                }
+            }
+        }
+
+        @media (max-width:375px) {
+            .titulo__insignia {
+                height: 20px;
+            }
+        }
+
+
+    }
+
+    @media (max-width:375px) {
+        .cabecera__titulo {
+            height: 20px;
         }
     }
 
@@ -113,38 +146,52 @@
                 padding: 0;
                 text-align: center;
                 width: 20%;
-            }
 
-            .listado__items a {
-                text-decoration: none;
-                padding: 3px 0 3px 0;
-                color: white;
-                font: bold;
-                text-shadow: 3px 3px 4px black;
-                width: 100%;
-                font-size: 22px;
-            }
+                .items__enlace {
+                    text-decoration: none;
+                    padding: 3px 0 3px 0;
+                    color: white;
+                    font: bold;
+                    text-shadow: 3px 3px 4px black;
+                    width: 100%;
+                    font-size: 22px;
+                    &:hover {
+                        transform: scale(1.1);
+                        transform-origin: top;
+                    }
+                }
 
-            @media (max-width: 750px) {
-                .listado__items a {
-                    font-size: 16px;
+                .items__nosotros:before {
+                    content: "Sobre nosotros";
+                }
 
+                @media (max-width:288px) {
+                    .items__nosotros::before {
+                        content: "SN";
+                    }
+                }
+
+                @media (max-width: 750px) {
+                    .items__enlace {
+                        font-size: 16px;
+
+                    }
                 }
 
                 @media (max-width: 555px) {
-                    .listado__items a {
+                    .items__enlace {
                         font-size: 11px;
                     }
                 }
 
                 @media (max-width: 375px) {
-                    .listado__items a {
+                    .items__enlace {
                         font-size: 8px;
                     }
                 }
 
                 @media (max-width: 288px) {
-                    .listado__items a {
+                    .items__enlace {
                         font-size: 8px;
                     }
                 }
