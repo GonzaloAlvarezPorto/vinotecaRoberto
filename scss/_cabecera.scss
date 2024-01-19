@@ -58,6 +58,7 @@
                         width: 25px;
                         border-radius: 15px;
                         padding-bottom: 3px;
+                        border: solid 2px white;
 
                     }
 
@@ -72,7 +73,7 @@
 
                     .iconos__instagram {
                         @extend .iconos;
-                        background-color: #b9029b;
+                        background: linear-gradient(90deg, rgba(232,255,0,1) 0%, rgba(255,0,0,1) 34%, rgba(244,0,255,1) 61%, rgba(142,0,207,1) 100%);
                         transition: 0.3s;
                         &:hover{
                             transform: scale(1.2);

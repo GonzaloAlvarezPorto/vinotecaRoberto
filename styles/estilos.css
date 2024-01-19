@@ -59,6 +59,7 @@
   width: 25px;
   border-radius: 15px;
   padding-bottom: 3px;
+  border: solid 2px white;
 }
 .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook {
   background-color: #0243cf;
@@ -68,7 +69,7 @@
   transform: scale(1.2);
 }
 .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram {
-  background-color: #b9029b;
+  background: linear-gradient(90deg, rgb(232, 255, 0) 0%, rgb(255, 0, 0) 34%, rgb(244, 0, 255) 61%, rgb(142, 0, 207) 100%);
   transition: 0.3s;
 }
 .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram:hover {
