@@ -12,8 +12,7 @@
 }
 .cabecera .cabecera__titulo {
   background-image: url("../media/logoCabeceraNuevo_bis.png");
-  background-position: bottom;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0;
   height: 40px;
@@ -37,7 +36,7 @@
   text-decoration: none;
   align-items: center;
 }
-.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook {
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__mercadoLibre, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook {
   width: 25px;
   padding-bottom: 3px;
   padding-right: 5px;
@@ -51,8 +50,11 @@
 .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp:hover {
   transform: scale(1.2);
 }
+.cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__mercadoLibre:hover {
+  transform: scale(1.2);
+}
 @media (max-width: 375px) {
-  .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp {
+  .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__facebook, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__instagram, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__whatsapp, .cabecera .cabecera__titulo .titulo__redes .redes__iconos .iconos__texto .iconos__mercadoLibre {
     width: 15px;
   }
 }
@@ -86,11 +88,9 @@
   margin: 0;
   height: 40px;
   position: fixed;
-  padding-left: 10%;
 }
 .cabecera .cabecera__titulo .titulo__insignia .insignia__img:hover {
   transform: scale(1.1);
-  transform-origin: top;
 }
 @media (max-width: 375px) {
   .cabecera .cabecera__titulo .titulo__insignia .insignia__img {
