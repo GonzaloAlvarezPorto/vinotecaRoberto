@@ -445,40 +445,53 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   font-size: 24px;
   margin: 0;
 }
+@media (max-width: 750px) {
+  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__titulo {
+    font-size: 18px;
+  }
+}
+@media (max-width: 555px) {
+  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__titulo {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__titulo {
+    font-size: 12px;
+  }
+}
+@media (max-width: 288px) {
+  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__titulo {
+    font-size: 12px;
+  }
+}
+@media (max-width: 288px) {
+  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__titulo {
+    font-size: 10px;
+  }
+}
 .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__informacion {
   font-size: 16px;
   margin: 0;
 }
 @media (max-width: 750px) {
-  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__titulo {
-    font-size: 16px;
+  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__informacion {
+    font-size: 14px;
   }
+}
+@media (max-width: 555px) {
   .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__informacion {
     font-size: 12px;
   }
 }
-@media (max-width: 555px) {
-  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha h4 {
-    font-size: 10px;
-  }
-  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha h6 {
-    font-size: 8px;
-  }
-}
 @media (max-width: 375px) {
-  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha h4 {
+  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__informacion {
     font-size: 10px;
-  }
-  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha h6 {
-    font-size: 8px;
   }
 }
 @media (max-width: 288px) {
-  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha h4 {
+  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha .datos__informacion {
     font-size: 10px;
-  }
-  .principal .principal__cuerpo .cuerpo__proveedor .proveedor__datos .datos__ficha h6 {
-    font-size: 8px;
   }
 }
 .principal .principal__cuerpo .cuerpo__proveedor .proveedor__descripcion {

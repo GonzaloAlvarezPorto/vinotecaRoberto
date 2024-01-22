@@ -71,53 +71,68 @@
                 text-shadow: 3px 3px 4px black;
 
                 .datos__ficha {
-                    .datos__titulo{
-                        font-size: 24px;
-                        margin: 0;
-                    }
 
-                    .datos__informacion{
-                        font-size: 16px;
+                    .datos__titulo {
+                        font-size: 24px;
                         margin: 0;
                     }
 
                     @media (max-width: 750px) {
                         .datos__titulo {
+                            font-size: 18px;
+                        }
+                    }
+
+                    @media (max-width: 555px) {
+                        .datos__titulo {
                             font-size: 16px;
                         }
+                    }
 
+                    @media (max-width: 375px) {
+                        .datos__titulo {
+                            font-size: 12px;
+                        }
+                    }
+
+                    @media (max-width: 288px) {
+                        .datos__titulo {
+                            font-size: 12px;
+                        }
+                    }
+
+                    @media (max-width: 288px) {
+                        .datos__titulo {
+                            font-size: 10px;
+                        }
+                    }
+
+                    .datos__informacion {
+                        font-size: 16px;
+                        margin: 0;
+                    }
+
+                    @media (max-width: 750px) {
+                        .datos__informacion {
+                            font-size: 14px;
+                        }
+                    }
+
+                    @media (max-width: 555px) {
                         .datos__informacion {
                             font-size: 12px;
                         }
                     }
 
-                    @media (max-width: 555px) {
-                        h4 {
-                            font-size: 10px;
-                        }
-
-                        h6 {
-                            font-size: 8px;
-                        }
-                    }
-
                     @media (max-width: 375px) {
-                        h4 {
+                        .datos__informacion {
                             font-size: 10px;
-                        }
-
-                        h6 {
-                            font-size: 8px;
                         }
                     }
 
                     @media (max-width: 288px) {
-                        h4 {
+                        .datos__informacion {
                             font-size: 10px;
-                        }
-
-                        h6 {
-                            font-size: 8px;
                         }
                     }
                 }
