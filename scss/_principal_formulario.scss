@@ -1,0 +1,38 @@
+.principal {
+    background-image: $imagenDeFondo;
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+
+    .principal__cuerpo {
+        min-height: 650px;
+        width: 100%;
+        @include niPaddingNiMargin(0, 0);
+
+        .principal__formulario {
+            padding: 30px;
+            color: white;
+            text-shadow: 3px 3px 4px black;
+    
+            .formulario__label {
+                padding: 5px;
+            }
+    
+            .formulario__cajas {
+                padding-bottom: 10px;
+            }
+        }
+    
+        @media (max-width: 555px) {
+            .principal__formulario {
+                font-size: 12px;
+            }
+        }
+    
+        @media (max-width: 375px) {
+            .principal__formulario {
+                font-size: 10px;
+            }
+        }
+    }
+}

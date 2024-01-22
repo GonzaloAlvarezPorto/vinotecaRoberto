@@ -1,0 +1,110 @@
+header {
+    position: sticky;
+    top: 0px;
+
+    .cabecera {
+        background-color: #351a02;
+        @include niPaddingNiMargin(0, 0);
+
+        .cabecera__menu {
+            @include niPaddingNiMargin(0, 0);
+            background-image: $imagenBarra;
+            background-repeat: repeat;
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .menu__boton {
+                @include niPaddingNiMargin(0, 0);
+                height: 30px;
+                border: none;
+                box-shadow: none;
+                padding-left: 7px;
+                margin: 3px 0 3px 0;
+
+                .boton__icono {
+                    height: 100%;
+                    background-image: $botonHamburguesa;
+                }
+
+                @media (max-width:375px) {
+                    .boton__icono {
+                        width: 20px;
+                    }
+                }
+            }
+
+            @media (max-width:575px) {
+                .menu__boton {
+                    display: flex;
+                    justify-content: left;
+                }
+            }
+
+            @media (max-width:375px) {
+                .menu__boton {
+                    height: 20px;
+                    padding-left: 7px;
+                }
+            }
+
+            .menu__contenedor {
+
+                .menu__listado {
+                    @include niPaddingNiMargin(0, 0);
+                    width: 100%;
+
+                    .listado__items {
+                        display: flex;
+                        padding: 0;
+                        text-align: center;
+                        width: 20%;
+
+                        .items__enlace {
+                            text-decoration: none;
+                            padding: 3px 0 3px 0;
+                            color: white;
+                            font: bold;
+                            text-shadow: 3px 3px 4px black;
+                            width: 100%;
+                            font-size: 22px;
+
+                            &:hover {
+                                transform: scale(1.1);
+                                transform-origin: top;
+                            }
+                        }
+
+                        @media (max-width: 780px) {
+                            .items__enlace {
+                                font-size: 16px;
+                            }
+                        }
+
+                        @media (max-width: 575px) {
+                            .items__enlace {
+                                border-top: 1px solid white;
+                                font-size: 15px;
+                                text-align: left;
+                            }
+                        }
+
+                        @media (max-width: 375px) {
+                            .items__enlace {
+                                font-size: 15px;
+                            }
+                        }
+
+                        @media (max-width: 288px) {
+                            .items__enlace {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

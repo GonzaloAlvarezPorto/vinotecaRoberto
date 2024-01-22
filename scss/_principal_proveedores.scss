@@ -1,0 +1,158 @@
+.principal {
+    background-image: $imagenDeFondo;
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+
+    .principal__cuerpo {
+        min-height: 650px;
+        width: 100%;
+        @include niPaddingNiMargin(0, 0);
+
+        .cuerpo__proveedor {
+            width: 100%;
+            @include niPaddingNiMargin(0, 0);
+
+            .proveedor__info {
+                width: 100%;
+                @include niPaddingNiMargin(0, 0);
+                border-bottom: solid 1px white;
+            }
+
+            .proveedor__media {
+                margin: 0;
+                padding: 15px;
+
+                .media__enlace {
+                    width: 100%;
+                    @include niPaddingNiMargin(0, 0);
+                }
+
+                .media__img {
+                    width: 60%;
+                    margin: map-get($fotosGalerias , margen);
+                    padding: map-get($fotosGalerias , relleno);
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transform-origin: top;
+                    }
+                }
+
+                @media (max-width: 750px) {
+                    .media__img {
+                        width: 100%;
+                    }
+                }
+
+                @media (max-width: 555px) {
+                    .media__img {
+                        width: 100%;
+                    }
+                }
+
+                @media (max-width: 375px) {
+                    .media__img {
+                        width: 100%;
+                    }
+                }
+
+                @media (max-width: 288px) {
+                    .media__img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .proveedor__datos {
+                margin: 0;
+                padding: 15px;
+                color: white;
+                text-shadow: 3px 3px 4px black;
+
+                .datos__ficha {
+                    .datos__titulo{
+                        font-size: 24px;
+                        margin: 0;
+                    }
+
+                    .datos__informacion{
+                        font-size: 16px;
+                        margin: 0;
+                    }
+
+                    @media (max-width: 750px) {
+                        .datos__titulo {
+                            font-size: 16px;
+                        }
+
+                        .datos__informacion {
+                            font-size: 12px;
+                        }
+                    }
+
+                    @media (max-width: 555px) {
+                        h4 {
+                            font-size: 10px;
+                        }
+
+                        h6 {
+                            font-size: 8px;
+                        }
+                    }
+
+                    @media (max-width: 375px) {
+                        h4 {
+                            font-size: 10px;
+                        }
+
+                        h6 {
+                            font-size: 8px;
+                        }
+                    }
+
+                    @media (max-width: 288px) {
+                        h4 {
+                            font-size: 10px;
+                        }
+
+                        h6 {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+
+            .proveedor__descripcion {
+                margin: 0;
+                padding: 15px;
+                color: white;
+                text-shadow: 3px 3px 4px black;
+            }
+
+            @media (max-width: 750px) {
+                .proveedor__descripcion {
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width: 555px) {
+                .proveedor__descripcion {
+                    font-size: 10px;
+                }
+            }
+
+            @media (max-width: 375px) {
+                .proveedor__descripcion {
+                    font-size: 10px;
+                }
+            }
+
+            @media (max-width: 288px) {
+                .proveedor__descripcion {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

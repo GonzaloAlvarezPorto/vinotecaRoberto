@@ -1,0 +1,81 @@
+.principal {
+    background-image: $imagenDeFondo;
+    background-size: cover;
+    width: 100%;
+    padding: 0;
+
+    .principal__cuerpo {
+        min-height: 650px;
+        width: 100%;
+        @include niPaddingNiMargin(0, 0);
+
+        .principal__catalogo {
+            width: 100%;
+            @include niPaddingNiMargin(0, 0);
+            padding-top: 20px;
+    
+            .catalogo__producto {
+                @include niPaddingNiMargin(0, 0);
+    
+                .producto__texto {
+                    color: white;
+                    text-align: center;
+                    padding-top: 5px;
+                    margin: 0;
+                    text-shadow: 3px 3px 4px black;
+                }
+    
+                @media (max-width: 375px) {
+                    .producto__texto {
+                        font-size: 13px;
+                    }
+                }
+    
+                @media (max-width: 288px) {
+                    .producto__texto {
+                        font-size: 7px;
+                    }
+                }
+    
+                .producto__enlace {
+                    @include niPaddingNiMargin(0, 0);
+                    text-align: center;
+                }
+    
+                .producto__img {
+                    margin: map-get($fotosGalerias , margen);
+                    padding: map-get($fotosGalerias , relleno);
+                    width: 40%;
+                    &:hover {
+                        transform: scale(1.1);
+                        transform-origin: top;
+                    }
+                }
+    
+                @media (max-width: 375px) {
+                    .producto__img {
+                        width: 80%;
+                    }
+                }
+    
+                @media (max-width: 288px) {
+                    .producto__img {
+                        width: 80%;
+                    }
+                }
+    
+                @media (max-width: 375px) {
+                    .media__img {
+                        width: 80%;
+                    }
+                }
+    
+                @media (max-width: 288px) {
+                    .media__img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+header {
+    position: sticky;
+    top: 0px;
+
+    .cabecera {
+        background-color: #351a02;
+        @include niPaddingNiMargin(0, 0);
+
+        .cabecera__titulo {
+            background-image: $imagenCabecera;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 40px;
+
+            .titulo__redes {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                height: 40px;
+                margin: 0px;
+                padding: 10px 0 10px 0;
+
+                .redes__iconos {
+                    display: flex;
+                    padding-right: 5px;
+                    justify-content: end;
+
+                    .iconos__texto {
+                        .iconos {
+                            width: 25px;
+
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+
+                        .iconos__facebook {
+                            @extend .iconos;
+                        }
+
+                        .iconos__instagram {
+                            @extend .iconos;
+                        }
+
+                        .iconos__whatsapp {
+                            @extend .iconos;
+                        }
+
+                        .iconos__mercadoLibre {
+                            @extend .iconos;
+                        }
+
+                        @media (max-width: 375px) {
+                            .iconos {
+                                width: 15px;
+                            }
+                        }
+
+                        @media (max-width: 200px) {
+                            .iconos {
+                                width: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 375px) {
+                .titulo__redes {
+                    @include niPaddingNiMargin(0, 0);
+                    display: flex;
+                    flex-direction: row;
+                    height: 20px;
+                    padding-left: 10px;
+                }
+            }
+
+            .titulo__vacia {
+                @include niPaddingNiMargin(0, 0);
+                height: 40px;
+            }
+
+            .titulo__vacia {
+                @include niPaddingNiMargin(0, 0);
+                height: 20px;
+            }
+
+            .titulo__insignia {
+                @include niPaddingNiMargin(0, 0);
+                height: 40px;
+
+                .insignia__logo {
+                    display: flex;
+                    justify-content: center;
+
+                    .logo__img {
+                        @include niPaddingNiMargin(0, 0);
+                        height: 40px;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    @media (max-width:375px) {
+                        .logo__img {
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width:375px) {
+                .titulo__insignia {
+                    @include niPaddingNiMargin(0, 0);
+                    height: 20px;
+                }
+            }
+        }
+
+        @media (max-width:375px) {
+            .cabecera__titulo {
+                height: 20px;
+            }
+        }
+    }
+}
