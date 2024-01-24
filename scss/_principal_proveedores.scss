@@ -71,10 +71,12 @@
                 text-shadow: 3px 3px 4px black;
 
                 .datos__ficha {
+                    width: 100%;
 
                     .datos__titulo {
                         font-size: 24px;
                         margin: 0;
+                        width: 100%;
                     }
 
                     @media (max-width: 750px) {
@@ -110,6 +112,7 @@
                     .datos__informacion {
                         font-size: 16px;
                         margin: 0;
+                        width: 100%;
                     }
 
                     @media (max-width: 750px) {
@@ -153,19 +156,19 @@
 
             @media (max-width: 555px) {
                 .proveedor__descripcion {
-                    font-size: 10px;
+                    font-size: 13px;
                 }
             }
 
             @media (max-width: 375px) {
                 .proveedor__descripcion {
-                    font-size: 10px;
+                    font-size: 13px;
                 }
             }
 
             @media (max-width: 288px) {
                 .proveedor__descripcion {
-                    font-size: 10px;
+                    font-size: 13px;
                 }
             }
         }

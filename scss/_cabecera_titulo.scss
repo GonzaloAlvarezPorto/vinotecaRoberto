@@ -13,54 +13,61 @@ header {
             margin: 0;
             height: 40px;
 
-            .titulo__redes {
-                display: flex;
-                flex-direction: row;
-                justify-content: end;
-                height: 40px;
-                margin: 0px;
-                padding: 10px 0 10px 0;
+            .titulo_contenedorRedes {
+                @include niPaddingNiMargin(0, 0);
+                height: 100%;
 
-                .redes__iconos {
+                .titulo__redes {
                     display: flex;
-                    padding-right: 5px;
-                    justify-content: end;
+                    flex-direction: row;
+                    justify-content: center;
+                    height: 100%;
+                    margin: 0px;
 
-                    .iconos__texto {
-                        .iconos {
-                            width: 25px;
+                    .redes__iconos {
+                        display: flex;
+                        justify-content: end;
+                        padding-top: 5px;
+                        padding-right: 5px;
 
-                            &:hover {
-                                transform: scale(1.2);
-                            }
-                        }
-
-                        .iconos__facebook {
-                            @extend .iconos;
-                        }
-
-                        .iconos__instagram {
-                            @extend .iconos;
-                        }
-
-                        .iconos__whatsapp {
-                            @extend .iconos;
-                        }
-
-                        .iconos__mercadoLibre {
-                            @extend .iconos;
-                        }
-
-                        @media (max-width: 375px) {
+                        .iconos__texto {
                             .iconos {
-                                width: 15px;
-                            }
-                        }
+                                height: 28px;
 
-                        @media (max-width: 200px) {
-                            .iconos {
-                                width: 13px;
+                                &:hover {
+                                    transform: scale(1.2);
+                                }
                             }
+
+                            @media (max-width: 375px) {
+                                .iconos {
+                                    height: 16px;
+                                }
+                            }
+
+
+                            .iconos__facebook {
+                                @extend .iconos;
+                            }
+
+                            .iconos__instagram {
+                                @extend .iconos;
+                            }
+
+                            .iconos__whatsapp {
+                                @extend .iconos;
+                            }
+
+                            .iconos__mercadoLibre {
+                                @extend .iconos;
+                            }
+
+                        }
+                    }
+
+                    @media (max-width:375px){
+                        .redes__iconos{
+                            padding-top:0;
                         }
                     }
                 }
@@ -71,7 +78,7 @@ header {
                     @include niPaddingNiMargin(0, 0);
                     display: flex;
                     flex-direction: row;
-                    height: 20px;
+                    height: 100%;
                     padding-left: 10px;
                 }
             }
@@ -79,11 +86,28 @@ header {
             .titulo__vacia {
                 @include niPaddingNiMargin(0, 0);
                 height: 40px;
+                display: flex;
+                justify-content: center;
+
+                .vacia__texto {
+                    @include niPaddingNiMargin(0, 0);
+                    color: white;
+                    height: 100%;
+                    text-shadow: 3px 3px 4px black;
+                    font-size: 40px;
+                }
+
+                @media (max-width:375px) {
+                    .vacia__texto {
+                        font-size: 20px;
+                    }
+                }
             }
 
-            .titulo__vacia {
-                @include niPaddingNiMargin(0, 0);
-                height: 20px;
+            @media (max-width:375px) {
+                .titulo__vacia {
+                    height: 20px;
+                }
             }
 
             .titulo__insignia {

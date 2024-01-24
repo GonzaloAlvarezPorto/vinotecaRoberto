@@ -13,22 +13,22 @@
             padding: 30px;
             color: white;
             text-shadow: 3px 3px 4px black;
-    
+
             .formulario__label {
                 padding: 5px;
             }
-    
+
             .formulario__cajas {
                 padding-bottom: 10px;
             }
         }
-    
+
         @media (max-width: 555px) {
             .principal__formulario {
                 font-size: 12px;
             }
         }
-    
+
         @media (max-width: 375px) {
             .principal__formulario {
                 font-size: 10px;
