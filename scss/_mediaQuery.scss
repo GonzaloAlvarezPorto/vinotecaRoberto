@@ -1,0 +1,365 @@
+@media (max-width:780px) {
+    header {
+        .cabecera {
+            .cabecera__menu {
+                .menu__contenedor {
+                    .menu__listado {
+                        .listado__items {
+                            .items__enlace {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .principal {
+        .principal__cuerpo {
+            .cuerpo__proveedor {
+                .proveedor__media {
+                    .media__img {
+                        width: 100%;
+                    }
+                }
+
+                .proveedor__descripcion {
+                    font-size: 14px;
+                }
+
+                .proveedor__datos {
+                    .datos__ficha {
+                        .datos__titulo {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .datos__ficha {
+                        .datos__informacion {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .pieDePagina {
+        .pieDePagina__contenedor {
+            .contenedor__listado {
+                .listado__textoPieDePagina {
+                    .textoPieDePagina__parrafo {
+                        font-size: 14px;
+                        padding: 11px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:575px) {
+    header {
+        .cabecera {
+            .cabecera__menu {
+                .menu__boton {
+                    display: flex;
+                    justify-content: left;
+                }
+
+                .menu__contenedor {
+                    .menu__listado {
+                        .listado__items {
+                            .items__enlace {
+                                border-top: 1px solid white;
+                                font-size: 15px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 555px) {
+    .principal {
+        .principal__cuerpo {
+            .principal__formulario {
+                font-size: 12px;
+            }
+
+            .cuerpo__proveedor {
+                .proveedor__info {
+                    .proveedor__media {
+                        .media__enlace {
+                            .media__img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .proveedor__datos {
+                    .datos__ficha {
+                        .datos__titulo {
+                            font-size: 16px;
+                        }
+
+                        .datos__informacion {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .proveedor__descripcion {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .pieDePagina {
+        .pieDePagina__contenedor {
+            .contenedor__listado {
+                .listado__logoMW {
+                    .logoMW__img {
+                        .img__enlace {
+                            .enlace__archivo {
+                                @include niPaddingNiMargin(0, 0);
+                                height: 100%;
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+
+                .listado__textoPieDePagina {
+                    .textoPieDePagina__parrafo {
+                        font-size: 12px;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        .cabecera {
+            .cabecera__menu {
+                .menu__boton {
+                    height: 20px;
+                    padding-left: 7px;
+
+                    .boton__icono {
+                        width: 20px;
+                    }
+                }
+                
+                .menu__contenedor {
+                    .menu__listado {
+                        .listado__items {
+                            .items__enlace {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cabecera__titulo {
+                height: 20px;
+
+                .titulo__contenedorRedes {
+                    .titulo__redes {
+                        @include niPaddingNiMargin(0, 0);
+                        display: flex;
+                        flex-direction: row;
+                        height: 100%;
+                        padding-left: 10px;
+
+                        .redes__iconos {
+                            padding-top: 0;
+
+                            .iconos__texto {
+                                
+                                .iconos {
+                                    height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .titulo__vacia {
+                    height: 20px;
+
+                    .vacia__texto {
+                        font-size: 20px;
+                    }
+                }
+
+                .titulo__insignia {
+                    @include niPaddingNiMargin(0, 0);
+                    height: 20px;
+
+                    .insignia__logo {
+                        .logo__img {
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .principal {
+        .principal__cuerpo {
+            .cuerpo__texto {
+                font-size: 14px;
+            }
+
+            .cuerpo__proveedor {
+                .proveedor__info {
+                    .proveedor__media {
+                        .media__enlace {
+                            .media__img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .proveedor__datos {
+                    .datos__ficha {
+                        .datos__informacion {
+                            font-size: 10px;
+                        }
+
+                        .datos__titulo {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .proveedor__descripcion {
+                    font-size: 13px;
+                }
+            }
+
+            .principal__formulario {
+                font-size: 10px;
+            }
+
+            .principal__catalogo {
+                .catalogo__producto {
+
+                    .producto__texto {
+                        font-size: 13px;
+                    }
+
+                    .producto__img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .pieDePagina {
+        .pieDePagina__contenedor {
+            .contenedor__listado {
+                .listado__textoPieDePagina {
+                    .textoPieDePagina__parrafo {
+                        font-size: 12px;
+                        padding: 3px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 288px) {
+
+    header {
+        .cabecera {
+            .cabecera__menu {
+                .menu__contenedor {
+                    .menu__listado {
+                        .listado__items {
+                            .items__enlace {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .principal {
+        .principal__cuerpo {
+
+            .cuerpo__texto {
+                font-size: 14px;
+            }
+
+            .principal__catalogo {
+                .catalogo__producto {
+
+                    .producto__img {
+                        width: 80%;
+                    }
+
+                    .producto__texto {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .cuerpo__proveedor {
+                .proveedor__descripcion{
+                    .proveedor__descripcion {
+                        font-size: 13px;
+                    }
+                }
+
+                .proveedor__datos{
+                    .datos__ficha{
+                        .datos__informacion {
+                            font-size: 10px;
+                        }
+
+                        .datos__titulo {
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .proveedor__media {
+                    .media__enlace {
+                        .media__img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:280px) {
+    .enlace__archivo {
+        width: 100%;
+        padding: 5px 0;
+    }
+}

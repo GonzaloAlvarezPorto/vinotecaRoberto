@@ -13,7 +13,7 @@ header {
             margin: 0;
             height: 40px;
 
-            .titulo_contenedorRedes {
+            .titulo__contenedorRedes {
                 @include niPaddingNiMargin(0, 0);
                 height: 100%;
 
@@ -39,13 +39,6 @@ header {
                                 }
                             }
 
-                            @media (max-width: 375px) {
-                                .iconos {
-                                    height: 16px;
-                                }
-                            }
-
-
                             .iconos__facebook {
                                 @extend .iconos;
                             }
@@ -64,22 +57,6 @@ header {
 
                         }
                     }
-
-                    @media (max-width:375px){
-                        .redes__iconos{
-                            padding-top:0;
-                        }
-                    }
-                }
-            }
-
-            @media (max-width: 375px) {
-                .titulo__redes {
-                    @include niPaddingNiMargin(0, 0);
-                    display: flex;
-                    flex-direction: row;
-                    height: 100%;
-                    padding-left: 10px;
                 }
             }
 
@@ -95,18 +72,6 @@ header {
                     height: 100%;
                     text-shadow: 3px 3px 4px black;
                     font-size: 40px;
-                }
-
-                @media (max-width:375px) {
-                    .vacia__texto {
-                        font-size: 20px;
-                    }
-                }
-            }
-
-            @media (max-width:375px) {
-                .titulo__vacia {
-                    height: 20px;
                 }
             }
 
@@ -126,26 +91,7 @@ header {
                             transform: scale(1.1);
                         }
                     }
-
-                    @media (max-width:375px) {
-                        .logo__img {
-                            height: 20px;
-                        }
-                    }
                 }
-            }
-
-            @media (max-width:375px) {
-                .titulo__insignia {
-                    @include niPaddingNiMargin(0, 0);
-                    height: 20px;
-                }
-            }
-        }
-
-        @media (max-width:375px) {
-            .cabecera__titulo {
-                height: 20px;
             }
         }
     }

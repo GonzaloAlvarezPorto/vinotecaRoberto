@@ -28,27 +28,11 @@ header {
                     height: 100%;
                     background-image: $botonHamburguesa;
                 }
-
-                @media (max-width:375px) {
-                    .boton__icono {
-                        width: 20px;
-                    }
-                }
             }
 
-            @media (max-width:575px) {
-                .menu__boton {
-                    display: flex;
-                    justify-content: left;
-                }
-            }
 
-            @media (max-width:375px) {
-                .menu__boton {
-                    height: 20px;
-                    padding-left: 7px;
-                }
-            }
+
+
 
             .menu__contenedor {
 
@@ -74,32 +58,6 @@ header {
                             &:hover {
                                 transform: scale(1.1);
                                 transform-origin: top;
-                            }
-                        }
-
-                        @media (max-width: 780px) {
-                            .items__enlace {
-                                font-size: 16px;
-                            }
-                        }
-
-                        @media (max-width: 575px) {
-                            .items__enlace {
-                                border-top: 1px solid white;
-                                font-size: 15px;
-                                text-align: left;
-                            }
-                        }
-
-                        @media (max-width: 375px) {
-                            .items__enlace {
-                                font-size: 15px;
-                            }
-                        }
-
-                        @media (max-width: 288px) {
-                            .items__enlace {
-                                font-size: 15px;
                             }
                         }
                     }

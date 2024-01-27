@@ -17,18 +17,6 @@
             text-shadow: 3px 3px 4px black;
         }
 
-        @media (max-width: 375px) {
-            .cuerpo__texto {
-                font-size: 14px;
-            }
-        }
-
-        @media (max-width: 288px) {
-            .cuerpo__texto {
-                font-size: 14px;
-            }
-        }
-
         .cuerpo__artista {
             width: 85%;
             font-size: 16px;
@@ -37,11 +25,5 @@
             text-align: right;
             text-shadow: 3px 3px 4px black;
         }
-
-        
     }
-
-    
-
-    
 }
