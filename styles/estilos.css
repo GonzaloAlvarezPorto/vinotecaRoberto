@@ -210,6 +210,8 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   width: 100%;
   text-align: center;
   padding-top: 20px;
+  text-shadow: 3px 3px 4px black;
+  font-size: 1.5em;
 }
 .principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos {
   display: flex;
@@ -291,15 +293,15 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   padding: 0;
   margin: 0;
 }
-.principal .principal__cuerpo .cuerpo__imagen {
+.principal .principal__cuerpo .ubicacion__imagen {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-.principal .principal__cuerpo .cuerpo__imagen .imagen__detalles {
+.principal .principal__cuerpo .ubicacion__imagen .imagen__detalles {
   width: 50%;
 }
-.principal .principal__cuerpo .cuerpo__imagendos {
+.principal .principal__cuerpo .ubicacion__imagendos {
   display: flex;
   justify-content: center;
   width: 100%;

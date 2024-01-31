@@ -9,7 +9,7 @@
         width: 100%;
         @include niPaddingNiMargin(0, 0);
 
-        .cuerpo__imagen{
+        .ubicacion__imagen{
             display: flex;
             justify-content: center;
             width: 100%;
@@ -19,7 +19,7 @@
             }
         }
 
-        .cuerpo__imagendos{
+        .ubicacion__imagendos{
             display: flex;
             justify-content: center;
             width: 100%;
