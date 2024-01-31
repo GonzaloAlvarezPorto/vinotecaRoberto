@@ -9,6 +9,23 @@
         width: 100%;
         @include niPaddingNiMargin(0, 0);
 
+        .cuerpo__imagen{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .imagen__detalles{
+                width: 50%;
+            }
+        }
+
+        .cuerpo__imagendos{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-bottom: 2rem;
+        }
+
         .cuerpo__ubicacion {
             width: 100%;
             @include niPaddingNiMargin(0, 0);
@@ -19,6 +36,7 @@
             .ubicacion__mapa {
                 width: 50%;
                 @include niPaddingNiMargin(0, 0);
+                padding-bottom: 2rem;
             }
         }
     }

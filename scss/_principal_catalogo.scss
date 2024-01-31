@@ -10,33 +10,63 @@
         @include niPaddingNiMargin(0, 0);
 
         .principal__catalogo {
-            width: 100%;
             @include niPaddingNiMargin(0, 0);
-            padding-top: 20px;
-    
-            .catalogo__producto {
-                @include niPaddingNiMargin(0, 0);
-    
-                .producto__texto {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .catalogo__bodega {
+                @include niPaddingNiMargin (0, 0);
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid white;
+
+                .bodega__titulo {
                     color: white;
+                    width: 100%;
                     text-align: center;
-                    padding-top: 5px;
-                    margin: 0;
-                    text-shadow: 3px 3px 4px black;
+                    padding-top: 20px;
                 }
-    
-                .producto__enlace {
-                    @include niPaddingNiMargin(0, 0);
-                    text-align: center;
-                }
-    
-                .producto__img {
-                    margin: map-get($fotosGalerias , margen);
-                    padding: map-get($fotosGalerias , relleno);
-                    width: 40%;
-                    &:hover {
-                        transform: scale(1.1);
-                        transform-origin: top;
+
+                .bodega__productos {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    
+                    .catalogo__producto {
+                        @include niPaddingNiMargin(0, 0);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+                        
+                        &:hover {
+                            transform: scale(1.1);
+                            transform-origin: top;
+                        }
+                        
+                        .producto__texto {
+                            color: white;
+                            text-align: center;
+                            padding-top: 5px;
+                            margin: 0;
+                            text-shadow: 3px 3px 4px black;
+                        }
+
+                        .producto__enlace {
+                            @include niPaddingNiMargin(0, 0);
+                            text-align: center;
+                            width: 150px;
+                        }
+
+                        .producto__img {
+                            margin: map-get($fotosGalerias , margen);
+                            padding: map-get($fotosGalerias , relleno);
+                            width: 150px;
+
+                        }
                     }
                 }
             }

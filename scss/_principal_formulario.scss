@@ -9,6 +9,15 @@
         width: 100%;
         @include niPaddingNiMargin(0, 0);
 
+        .cuerpo__parrafo{
+            color:white;
+            padding: 5px 50px 10px 50px;
+            text-align: left;
+            margin: 0px;
+            text-shadow: 3px 3px 4px black;
+            font-size: 18px;
+        }
+
         .principal__formulario {
             padding: 30px;
             color: white;

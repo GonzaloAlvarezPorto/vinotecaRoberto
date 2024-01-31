@@ -86,9 +86,9 @@ header {
                     .logo__img {
                         @include niPaddingNiMargin(0, 0);
                         height: 40px;
-
+                        
                         &:hover {
-                            transform: scale(1.1);
+                            animation: rotacion infinite 1s;
                         }
                     }
                 }

@@ -1,3 +1,11 @@
+@keyframes rotacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -133,7 +141,7 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img 
   height: 40px;
 }
 header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:hover {
-  transform: scale(1.1);
+  animation: rotacion infinite 1s;
 }
 
 .principal {
@@ -149,18 +157,23 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   margin: 0;
 }
 .principal .principal__cuerpo .cuerpo__texto {
-  padding: 20px 50px 0px 50px;
-  color: white;
-  text-align: center;
+  padding: 5px 50px 10px 50px;
+  color: rgb(201, 201, 201);
+  text-align: left;
   margin: 0px;
   text-shadow: 3px 3px 4px black;
+  font-size: 18px;
+}
+.principal .principal__cuerpo .cuerpo__imagen {
+  padding: 20px;
+  padding-left: 50px;
 }
 .principal .principal__cuerpo .cuerpo__artista {
-  width: 85%;
-  font-size: 16px;
-  padding: 30px;
-  color: rgb(201, 201, 201);
-  text-align: right;
+  font-size: 20px;
+  color: white;
+  padding: 25px;
+  padding-bottom: 5px;
+  text-align: left;
   text-shadow: 3px 3px 4px black;
 }
 
@@ -177,35 +190,61 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   margin: 0;
 }
 .principal .principal__cuerpo .principal__catalogo {
-  width: 100%;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.principal .principal__cuerpo .principal__catalogo .catalogo__bodega {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+}
+.principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__titulo {
+  color: white;
+  width: 100%;
+  text-align: center;
   padding-top: 20px;
 }
-.principal .principal__cuerpo .principal__catalogo .catalogo__producto {
+.principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
-.principal .principal__cuerpo .principal__catalogo .catalogo__producto .producto__texto {
+.principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto:hover {
+  transform: scale(1.1);
+  transform-origin: top;
+}
+.principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto .producto__texto {
   color: white;
   text-align: center;
   padding-top: 5px;
   margin: 0;
   text-shadow: 3px 3px 4px black;
 }
-.principal .principal__cuerpo .principal__catalogo .catalogo__producto .producto__enlace {
+.principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto .producto__enlace {
   padding: 0;
   margin: 0;
   text-align: center;
+  width: 150px;
 }
-.principal .principal__cuerpo .principal__catalogo .catalogo__producto .producto__img {
+.principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto .producto__img {
   margin: 0;
   padding: 0;
-  width: 40%;
-}
-.principal .principal__cuerpo .principal__catalogo .catalogo__producto .producto__img:hover {
-  transform: scale(1.1);
-  transform-origin: top;
+  width: 150px;
 }
 
 .principal {
@@ -219,6 +258,14 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   width: 100%;
   padding: 0;
   margin: 0;
+}
+.principal .principal__cuerpo .cuerpo__parrafo {
+  color: white;
+  padding: 5px 50px 10px 50px;
+  text-align: left;
+  margin: 0px;
+  text-shadow: 3px 3px 4px black;
+  font-size: 18px;
 }
 .principal .principal__cuerpo .principal__formulario {
   padding: 30px;
@@ -244,6 +291,20 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   padding: 0;
   margin: 0;
 }
+.principal .principal__cuerpo .cuerpo__imagen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.principal .principal__cuerpo .cuerpo__imagen .imagen__detalles {
+  width: 50%;
+}
+.principal .principal__cuerpo .cuerpo__imagendos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
 .principal .principal__cuerpo .cuerpo__ubicacion {
   width: 100%;
   padding: 0;
@@ -256,6 +317,7 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   width: 50%;
   padding: 0;
   margin: 0;
+  padding-bottom: 2rem;
 }
 
 .principal {
@@ -421,8 +483,21 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   }
 }
 @media (max-width: 555px) {
+  .principal .principal__cuerpo .cuerpo__parrafo {
+    font-size: 14px;
+  }
   .principal .principal__cuerpo .principal__formulario {
     font-size: 12px;
+  }
+  .principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto .producto__texto {
+    font-size: 19px;
+  }
+  .principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto .producto__enlace .producto__img {
+    width: 100%;
   }
   .principal .principal__cuerpo .cuerpo__proveedor .proveedor__info .proveedor__media .media__enlace .media__img {
     width: 100%;
@@ -441,10 +516,6 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
     margin: 0;
     height: 100%;
     width: 90%;
-  }
-  .pieDePagina .pieDePagina__contenedor .contenedor__listado .listado__textoPieDePagina .textoPieDePagina__parrafo {
-    font-size: 12px;
-    padding: 5px 0;
   }
 }
 @media (max-width: 375px) {
@@ -490,7 +561,7 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
     height: 20px;
   }
   .principal .principal__cuerpo .cuerpo__texto {
-    font-size: 14px;
+    font-size: 16px;
   }
   .principal .principal__cuerpo .cuerpo__proveedor .proveedor__info .proveedor__media .media__enlace .media__img {
     width: 100%;
@@ -507,15 +578,15 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   .principal .principal__cuerpo .principal__formulario {
     font-size: 10px;
   }
-  .principal .principal__cuerpo .principal__catalogo .catalogo__producto .producto__texto {
+  .principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto .producto__texto {
     font-size: 13px;
   }
-  .principal .principal__cuerpo .principal__catalogo .catalogo__producto .producto__img {
-    width: 80%;
-  }
-  .pieDePagina .pieDePagina__contenedor .contenedor__listado .listado__textoPieDePagina .textoPieDePagina__parrafo {
-    font-size: 12px;
-    padding: 3px 0;
+  .principal .principal__cuerpo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto .producto__enlace .producto__img {
+    width: 100%;
   }
 }
 @media (max-width: 288px) {
@@ -524,6 +595,9 @@ header .cabecera .cabecera__titulo .titulo__insignia .insignia__logo .logo__img:
   }
   .principal .principal__cuerpo .cuerpo__texto {
     font-size: 14px;
+  }
+  .principal .principal__cuerpo .cuerpo__imagen {
+    width: 75%;
   }
   .principal .principal__cuerpo .principal__catalogo .catalogo__producto .producto__img {
     width: 80%;

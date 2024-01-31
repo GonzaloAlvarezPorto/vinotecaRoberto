@@ -87,12 +87,36 @@
     }
 }
 
-
 @media (max-width: 555px) {
     .principal {
         .principal__cuerpo {
+            .cuerpo__parrafo{
+                font-size:14px;
+            }
             .principal__formulario {
                 font-size: 12px;
+            }
+
+            .principal__catalogo {
+                .catalogo__bodega {
+                    .bodega__productos {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .catalogo__producto {
+
+                            .producto__texto {
+                                font-size: 19px;
+                            }
+
+                            .producto__enlace {
+                                .producto__img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .cuerpo__proveedor {
@@ -139,13 +163,6 @@
                         }
                     }
                 }
-
-                .listado__textoPieDePagina {
-                    .textoPieDePagina__parrafo {
-                        font-size: 12px;
-                        padding: 5px 0;
-                    }
-                }
             }
         }
     }
@@ -163,7 +180,7 @@
                         width: 20px;
                     }
                 }
-                
+
                 .menu__contenedor {
                     .menu__listado {
                         .listado__items {
@@ -190,7 +207,7 @@
                             padding-top: 0;
 
                             .iconos__texto {
-                                
+
                                 .iconos {
                                     height: 16px;
                                 }
@@ -224,7 +241,7 @@
     .principal {
         .principal__cuerpo {
             .cuerpo__texto {
-                font-size: 14px;
+                font-size: 16px;
             }
 
             .cuerpo__proveedor {
@@ -260,27 +277,23 @@
             }
 
             .principal__catalogo {
-                .catalogo__producto {
+                .catalogo__bodega {
+                    .bodega__productos {
+                        display: flex;
+                        flex-wrap: wrap;
 
-                    .producto__texto {
-                        font-size: 13px;
-                    }
+                        .catalogo__producto {
 
-                    .producto__img {
-                        width: 80%;
-                    }
-                }
-            }
-        }
-    }
+                            .producto__texto {
+                                font-size: 13px;
+                            }
 
-    .pieDePagina {
-        .pieDePagina__contenedor {
-            .contenedor__listado {
-                .listado__textoPieDePagina {
-                    .textoPieDePagina__parrafo {
-                        font-size: 12px;
-                        padding: 3px 0;
+                            .producto__enlace {
+                                .producto__img {
+                                    width: 100%;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -313,6 +326,10 @@
                 font-size: 14px;
             }
 
+            .cuerpo__imagen {
+                width: 75%;
+            }
+
             .principal__catalogo {
                 .catalogo__producto {
 
@@ -327,14 +344,14 @@
             }
 
             .cuerpo__proveedor {
-                .proveedor__descripcion{
+                .proveedor__descripcion {
                     .proveedor__descripcion {
                         font-size: 13px;
                     }
                 }
 
-                .proveedor__datos{
-                    .datos__ficha{
+                .proveedor__datos {
+                    .datos__ficha {
                         .datos__informacion {
                             font-size: 10px;
                         }
