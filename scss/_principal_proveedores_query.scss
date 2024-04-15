@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+    .principal__cuerpoProveedor {
+        .cuerpo__proveedor {
+            .proveedor__info {
+                flex-direction: column;
+
+                .proveedor__media {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

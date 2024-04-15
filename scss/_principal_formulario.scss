@@ -1,34 +1,57 @@
-.principal {
-    background-image: $imagenDeFondo;
-    background-size: cover;
+.principal__cuerpoFormulario {
+    min-height: 650px;
     width: 100%;
-    padding: 0;
+    @include niPaddingNiMargin(0, 0);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
 
-    .principal__cuerpo {
-        min-height: 650px;
+    .cuerpo__parrafo {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 1rem;
+        text-align: left;
+        margin: 0px;
+        text-shadow: 3px 3px 4px black;
+        font-size: 18px;
+    }
+
+    .principal__formulario {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 3px 3px 4px black;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        @include niPaddingNiMargin(0, 0);
-
-        .cuerpo__parrafo{
-            color:white;
-            padding: 5px 50px 10px 50px;
-            text-align: left;
-            margin: 0px;
-            text-shadow: 3px 3px 4px black;
-            font-size: 18px;
-        }
-
-        .principal__formulario {
-            padding: 30px;
-            color: white;
-            text-shadow: 3px 3px 4px black;
-
+        flex-wrap: wrap;
+        
+        .formulario__cajas {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 400px;
+            flex-wrap: wrap;
+            align-items: center;
+            
             .formulario__label {
+                display: flex;
                 padding: 5px;
+                justify-content: end;
             }
 
-            .formulario__cajas {
-                padding-bottom: 10px;
+            .formulario__textarea{
+                width: 100%;
+            }
+
+            .formulario__boton{
+                margin-top: 1rem;
+                padding: 5px;
             }
         }
     }

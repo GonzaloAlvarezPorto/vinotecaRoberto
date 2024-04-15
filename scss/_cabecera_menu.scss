@@ -1,60 +1,84 @@
 header {
+    @include niPaddingNiMargin(0, 0);
+    background-color: $colorEyF;
     position: sticky;
     top: 0px;
+    display: flex;
+    flex-direction: row;
+    
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 0.5rem;
+        
+        .logo__enlace {
+            padding: 0.4rem;
+            background-color: rgb(9, 24, 4);
+            border-radius: 90px;
 
-    .cabecera {
-        background-color: #351a02;
-        @include niPaddingNiMargin(0, 0);
+            .logo__imagen {
+                height: 48px;
 
-        .cabecera__menu {
-            @include niPaddingNiMargin(0, 0);
-            background-image: $imagenBarra;
-            background-repeat: repeat;
-            display: flex;
-            justify-content: space-around;
-            text-decoration: none;
-            flex-wrap: wrap;
-            width: 100%;
-
-            .menu__boton {
-                @include niPaddingNiMargin(0, 0);
-                height: 30px;
-                border: none;
-                box-shadow: none;
-                padding-left: 7px;
-                margin: 3px 0 3px 0;
-
-                .boton__icono {
-                    height: 100%;
-                    background-image: $botonHamburguesa;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 2s;
                 }
             }
+        }
+    }
 
-            .menu__contenedor {
+    .encabezado {
+        @include niPaddingNiMargin(0, 0);
+        width: 70%;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
 
-                .menu__listado {
+        .encabezado__abrir {
+            display: none;
+        }
+
+        .encabezado__menu {
+            @include niPaddingNiMargin(0, 0);
+            display: flex;
+            justify-content: end;
+
+            .menu__listado {
+                display: flex;
+                justify-content: space-around;
+                list-style-type: none;
+                gap: 1rem;
+                text-align: center;
+                padding: 1rem;
+                margin: 0;
+                
+                .listado__cerrar {
+                    display: none;
+                    padding: 0.5rem;
+                }
+                
+                .listado__items {
                     @include niPaddingNiMargin(0, 0);
-                    width: 100%;
-
-                    .listado__items {
+                    display: flex;
+                    justify-content: center;
+                    
+                    .items__enlace {
+                        @include niPaddingNiMargin(0, 0);
+                        flex-direction: column;
+                        text-decoration: none;
+                        color: rgb(159, 185, 146);
                         display: flex;
-                        padding: 0;
-                        text-align: center;
-                        width: 20%;
-
-                        .items__enlace {
-                            text-decoration: none;
-                            padding: 3px 0 3px 0;
-                            color: white;
-                            font: bold;
-                            text-shadow: 3px 3px 4px black;
-                            width: 100%;
-                            font-size: 22px;
-
-                            &:hover {
-                                transform: scale(1.1);
-                                transform-origin: top;
-                            }
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: bold;
+                        
+                        &:hover {
+                            color: rgb(89, 139, 89);
+                            transition: 2s;
                         }
                     }
                 }

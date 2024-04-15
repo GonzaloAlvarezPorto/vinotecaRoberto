@@ -1,35 +1,5 @@
 .principal {
-    background-image: $imagenDeFondo;
-    background-size: cover;
     width: 100%;
     padding: 0;
-
-    .principal__cuerpo {
-        min-height: 650px;
-        width: 100%;
-        @include niPaddingNiMargin(0, 0);
-
-        .cuerpo__texto {
-            padding: 5px 50px 10px 50px;
-            color: rgb(201, 201, 201);
-            text-align: left;
-            margin: 0px;
-            text-shadow: 3px 3px 4px black;
-            font-size: 18px;
-        }
-
-        .cuerpo__imagen{
-            padding: 20px;
-            padding-left: 50px;
-        }
-
-        .cuerpo__artista {
-            font-size: 20px;
-            color: white;
-            padding: 25px;
-            padding-bottom: 5px;
-            text-align: left;
-            text-shadow: 3px 3px 4px black;
-        }
-    }
+    background-color: $colorFondo;
 }

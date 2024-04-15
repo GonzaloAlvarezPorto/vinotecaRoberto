@@ -1,43 +1,50 @@
-.principal {
-    background-image: $imagenDeFondo;
-    background-size: cover;
+.principal__cuerpoNosotros {
+    min-height: 650px;
     width: 100%;
-    padding: 0;
+    @include niPaddingNiMargin(0, 0);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
 
-    .principal__cuerpo {
-        min-height: 650px;
+    .cuerpo__textoNosotros{
+        padding: 0.5rem 2rem;
+        color: rgb(201, 201, 201);
+        text-align: left;
+        margin: 0px;
+        text-shadow: 3px 3px 3px black;
+        font-size: 18px;
+    }
+
+    .ubicacion__imagen {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .imagen__detalles {
+            width: 70%;
+        }
+    }
+
+    .ubicacion__imagendos {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .cuerpo__ubicacion {
         width: 100%;
         @include niPaddingNiMargin(0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .ubicacion__imagen{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-            .imagen__detalles{
-                width: 50%;
-            }
-        }
-
-        .ubicacion__imagendos{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            padding-bottom: 2rem;
-        }
-
-        .cuerpo__ubicacion {
-            width: 100%;
+        .ubicacion__mapa {
+            width: 50%;
             @include niPaddingNiMargin(0, 0);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .ubicacion__mapa {
-                width: 50%;
-                @include niPaddingNiMargin(0, 0);
-                padding-bottom: 2rem;
-            }
+            padding-bottom: 2rem;
         }
     }
 }

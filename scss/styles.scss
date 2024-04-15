@@ -1,16 +1,17 @@
 @import "_variables";
-@import "_maps";
 @import "_mixins";
-
-@import "_keyframes";
 
 @import "_generales";
 @import "_cabecera_menu";
-@import "_cabecera_titulo";
+@import "_cabecera_menu_query";
 @import "_principal";
+@import "_principal_inicio";
 @import "_principal_catalogo";
+@import "_principal_catalogo_query";
 @import "_principal_formulario";
+@import "_principal_formulario_query";
 @import "_principal_ubicacion";
 @import "_principal_proveedores";
+@import "_principal_proveedores_query";
 @import "_pieDePagina";
-@import "_mediaQuery";
+@import "_pieDePagina_query";

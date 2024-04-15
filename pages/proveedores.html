@@ -19,101 +19,61 @@
 
 <body>
     <header>
-        <div class="cabecera container-fluid">
-            <div class="cabecera__titulo row">
-                <div class="titulo__contenedorRedes col-4">
-                    <ul class="titulo__redes">
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://www.facebook.com/vinotecaroberto" target="_blank"
-                                title="facebook">
-                                <img class="iconos__facebook" src="../media/imagenes/facebook2.png" alt="facebook"
-                                    title="facebook">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://www.instagram.com/vinotecaroberto/" target="_blank"
-                                title="instagram">
-                                <img class="iconos__instagram" src="../media/imagenes/instagram.png" alt="instagram"
-                                    title="instagram">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://wa.me/5491135880974" target="_blank"
-                                title="whatsapp">
-                                <img class="iconos__whatsapp" src="../media/imagenes/whatsapp2.png" alt="whatsapp"
-                                    title="whatsapp">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://listado.mercadolibre.com.ar/vinoteca-roberto-wilde"
-                                target="_blank" title="mercadolibre">
-                                <img class="iconos__mercadoLibre" src="../media/imagenes/mercado_libre.png"
-                                    alt="mercado libre" title="mercadolibre">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="titulo__vacia col-6">
-                    <h1 class="vacia__texto">
-                        VR Vinos
-                    </h1>
-                </div>
-                <div class="titulo__insignia col-2">
-                    <a class="insignia__logo" href="../index.html" title="index">
-                        <img class="logo__img" src="../media/imagenes/logo2.png" alt="logo vr vinos" title="index">
-                    </a>
-                </div>
-            </div>
-            <div class="cabecera__menu row navbar navbar-expand-sm navbar-dark bg-primary">
-                <button class="menu__boton navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#opciones" name="button">
-                    <div class="boton__icono navbar-toggler-icon"></div>
-                </button>
-
-                <div class="menu__contenedor collapse navbar-collapse" id="opciones">
-                    <ul class="menu__listado row navbar-nav">
-                        <li class="listado__items col-2 nav-item">
-                            <a class="items__enlace nav-link" href="../index.html" title="index">
-                                Inicio
-                            </a>
-                        </li>
-                        <li class="listado__items col-2 nav-item">
-                            <a class="items__enlace" href="../pages/catalogo.html" title="catalogo">
-                                Catálogo
-                            </a>
-                        </li>
-                        <li class="listado__items col-3 nav-item">
-                            <a class="items__enlace" href="#" title="proveedores">
-                                Proveedores
-                            </a>
-                        </li>
-                        <li class="listado__items col-4 nav-item">
-                            <a class="items__enlace" href="../pages/nosotros.html" title="nosotros">
-                                Sobre Nosotros
-                            </a>
-                        </li>
-                        <li class="listado__items col-1 nav-item">
-                            <a class="items__enlace" href="../pages/contacto.html" title="contacto">
-                                Contacto
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="logo">
+            <a class="logo__enlace" href="../index.html" title="inicio">
+                <img class="logo__imagen" src="../media/imagenes/logo_vinoteca_blanco.png" alt="vinoteca roberto" title="vinoteca roberto">
+            </a>
+        </div>
+        <div class="encabezado">
+            <button id="abrir" class="encabezado__abrir">
+                <img class="abrir__imagen" src="../media/imagenes/boton__apertura__menu.png" alt="menu abrir" title="menu abrir">
+            </button>
+            <div id="nav" class="encabezado__menu">
+                <ul class="menu__listado">
+                    <button id="cerrar" class="listado__cerrar">
+                        <img class="cerrar__imagen" src="../media/imagenes/boton__cierre__menu.png" alt="menu cerrar" title="menu cerrar">
+                    </button>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../index.html" title="inicio">
+                            INICIO
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/catalogo.html" title="catalogo">
+                            CATÁLOGO
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/proveedores.html" title="proveedores">
+                            PROVEEDORES
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/nosotros.html" title="nosotros">
+                            SOBRE NOSOTROS
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/contacto.html" title="contacto">
+                            CONTACTO
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
-    <main class="container-fluid principal">
-        <div class="principal__cuerpo">
+    <main class="principal">
+        <div class="principal__cuerpoProveedor">
             <div class="cuerpo__proveedor">
-                <div class="proveedor__info row">
-                    <div class="proveedor__media col-3">
+                <div class="proveedor__info">
+                    <div class="proveedor__media">
                         <a class="media__enlace" href="https://bodegaslopez.com.ar/" target="_blank"
                             title="bodega lopez">
                             <img class="media__img" src="../media/imagenes/bodega_lopez.png" alt="logo bodega lopez"
                                 title="bodega lopez">
                         </a>
                     </div>
-                    <div class="proveedor__datos col-3">
+                    <div class="proveedor__datos">
                         <div class="datos__ficha">
                             <p class="datos__titulo">Bodega:</p>
                             <p class="datos__informacion">López</p>
@@ -127,7 +87,7 @@
                             <p class="datos__informacion">Familia López</p>
                         </div>
                     </div>
-                    <div class="proveedor__descripcion col-6">
+                    <div class="proveedor__descripcion">
                         <p>
                             Desde su fundación en 1898 Bodegas López representa un caso excepcional dentro de la
                             industria vitivinícola argentina. Hoy continúa en manos de la familia fundadora, ofreciendo
@@ -137,15 +97,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="proveedor__info row">
-                    <div class="proveedor__media col-3">
+                <div class="proveedor__info">
+                    <div class="proveedor__media">
                         <a class="media__enlace" href="https://www.crotta.com.ar/" target="_blank"
                             title="bodega crotta">
                             <img class="media__img" src="../media/imagenes/familia_crotta.png" alt="familia crotta"
                                 title="bodega crotta">
                         </a>
                     </div>
-                    <div class="proveedor__datos col-3">
+                    <div class="proveedor__datos">
                         <div class="datos__ficha">
                             <p class="datos__titulo">Bodega:</p>
                             <p class="datos__informacion">Crotta</p>
@@ -159,7 +119,7 @@
                             <p class="datos__informacion">Familia Crotta</p>
                         </div>
                     </div>
-                    <div class="proveedor__descripcion col-6">
+                    <div class="proveedor__descripcion">
                         <p>
                             En 1919, un niño de 14 años llegó solo en barco al puerto de Buenos Aires. Era el italiano
                             José Eduardo Crotta. Había nacido el 1 de junio de 1905 en la región de Lombardía, en una
@@ -186,15 +146,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="proveedor__info row">
-                    <div class="proveedor__media col-3">
+                <div class="proveedor__info">
+                    <div class="proveedor__media">
                         <a class="media__enlace" href="https://www.rutiniwines.com/" target="_blank"
                             title="bodega rutini">
                             <img class="media__img" src="../media/imagenes/bodega_rutini.png" alt="logo rutini"
                                 title="bodega rutini">
                         </a>
                     </div>
-                    <div class="proveedor__datos col-3">
+                    <div class="proveedor__datos">
                         <div class="datos__ficha">
                             <p class="datos__titulo">Bodega:</p>
                             <p class="datos__informacion">Rutini</p>
@@ -208,7 +168,7 @@
                             <p class="datos__informacion">Familia Rutini</p>
                         </div>
                     </div>
-                    <div class="proveedor__descripcion col-6">
+                    <div class="proveedor__descripcion">
                         <p>
                             Rutini Wines cuenta con 255 hectáreas de viñedos, en altitudes que oscilan entre 1.050 y
                             1.200 metros sobre el nivel del mar. A esta superficie se agregan otras 145 hectáreas de
@@ -223,9 +183,40 @@
         </div>
     </main>
     <footer>
-        <div class="pieDePagina container-fluid">
+        <div class="pieDePagina">
+            <div class="titulo__contenedorRedes">
+                <ul class="titulo__redes">
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://www.facebook.com/vinotecaroberto" target="_blank"
+                            title="facebook">
+                            <img class="iconos__facebook" src="../media/imagenes/facebook.png" alt="facebook"
+                                title="facebook">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://www.instagram.com/vinotecaroberto/" target="_blank"
+                            title="instagram">
+                            <img class="iconos__instagram" src="../media/imagenes/instagram.png" alt="instagram"
+                                title="instagram">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://wa.me/5491135880974" target="_blank" title="whatsapp">
+                            <img class="iconos__whatsapp" src="../media/imagenes/whatsapp.png" alt="whatsapp"
+                                title="whatsapp">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://listado.mercadolibre.com.ar/vinoteca-roberto-wilde"
+                            target="_blank" title="mercado libre">
+                            <img class="iconos__mercadoLibre" src="../media/imagenes/mercadolibre.png"
+                                alt="mercado libre" title="mercado libre">
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="pieDePagina__contenedor ">
-                <ul class="contenedor__listado row">
+                <ul class="contenedor__listado">
                     <li class="listado__textoPieDePagina">
                         <p class="textoPieDePagina__parrafo">©2023-2024 Todos los derechos reservados Vinoteca Roberto
                         </p>
@@ -237,6 +228,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="../js/principal.js"></script>
 </body>
 
 </html>

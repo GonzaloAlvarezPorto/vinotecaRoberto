@@ -19,111 +19,76 @@
 
 <body>
     <header>
-        <div class="cabecera container-fluid">
-            <div class="cabecera__titulo row">
-                <div class="titulo__contenedorRedes col-4">
-                    <ul class="titulo__redes">
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://www.facebook.com/vinotecaroberto" target="_blank"
-                                title="facebook">
-                                <img class="iconos__facebook" src="../media/imagenes/facebook2.png" alt="facebook"
-                                    title="facebook">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://www.instagram.com/vinotecaroberto/" target="_blank"
-                                title="instagram">
-                                <img class="iconos__instagram" src="../media/imagenes/instagram.png" alt="instagram"
-                                    title="instagram">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://wa.me/5491135880974" target="_blank"
-                                title="whatsapp">
-                                <img class="iconos__whatsapp" src="../media/imagenes/whatsapp2.png" alt="whatsapp"
-                                    title="whatsapp">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://listado.mercadolibre.com.ar/vinoteca-roberto-wilde"
-                                target="_blank" title="mercadolibre">
-                                <img class="iconos__mercadoLibre" src="../media/imagenes/mercado_libre.png"
-                                    alt="mercado libre" title="mercadolibre">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="titulo__vacia col-6">
-                    <h1 class="vacia__texto">
-                        VR Vinos
-                    </h1>
-                </div>
-                <div class="titulo__insignia col-2">
-                    <a class="insignia__logo" href="../index.html" title="vr vinos">
-                        <img class="logo__img" src="../media/imagenes/logo2.png" alt="logo vr vinos" title="vr vinos">
-                    </a>
-                </div>
-            </div>
-            <div class="cabecera__menu row navbar navbar-expand-sm navbar-dark bg-primary">
-                <button class="menu__boton navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#opciones" name="button">
-                    <div class="boton__icono navbar-toggler-icon"></div>
-                </button>
-
-                <div class="menu__contenedor collapse navbar-collapse" id="opciones">
-                    <ul class="menu__listado row navbar-nav">
-                        <li class="listado__items col-2 nav-item">
-                            <a class="items__enlace nav-link" href="../index.html" title="index">
-                                Inicio
-                            </a>
-                        </li>
-                        <li class="listado__items col-2 nav-item">
-                            <a class="items__enlace" href="../pages/catalogo.html" title="catalogo">
-                                Catálogo
-                            </a>
-                        </li>
-                        <li class="listado__items col-3 nav-item">
-                            <a class="items__enlace" href="../pages/proveedores.html" title="proveedores">
-                                Proveedores
-                            </a>
-                        </li>
-                        <li class="listado__items col-4 nav-item">
-                            <a class="items__enlace" href="#" title="nosotros">
-                                Sobre Nosotros
-                            </a>
-                        </li>
-                        <li class="listado__items col-1 nav-item">
-                            <a class="items__enlace" href="../pages/contacto.html" title="contacto">
-                                Contacto
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="logo">
+            <a class="logo__enlace" href="../index.html" title="inicio">
+                <img class="logo__imagen" src="../media/imagenes/logo_vinoteca_blanco.png" alt="vinoteca roberto" title="vinoteca roberto">
+            </a>
+        </div>
+        <div class="encabezado">
+            <button id="abrir" class="encabezado__abrir">
+                <img class="abrir__imagen" src="../media/imagenes/boton__apertura__menu.png" alt="abrir menu" title="abrir menu">
+            </button>
+            <div id="nav" class="encabezado__menu">
+                <ul class="menu__listado">
+                    <button id="cerrar" class="listado__cerrar">
+                        <img class="cerrar__imagen" src="../media/imagenes/boton__cierre__menu.png" alt="cerrar menu" title="cerrar menu">
+                    </button>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../index.html" title="inicio">
+                            INICIO
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/catalogo.html" title="catalogo">
+                            CATÁLOGO
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/proveedores.html" title="proveedores">
+                            PROVEEDORES
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/nosotros.html" title="nosotros">
+                            SOBRE NOSOTROS
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/contacto.html" title="contacto">
+                            CONTACTO
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
-    <main class="container-fluid principal">
-        <div class="principal__cuerpo">
-            <p class="cuerpo__texto">
+    <main class="principal">
+        <div class="principal__cuerpoNosotros">
+            <p class="cuerpo__textoNosotros">
                 Somos una familia oriunda de Avellaneda, nos dedicamos al rubro vitivinícola desde hace 3
                 generaciones. Al
                 principio lo hacíamos desde
-                la costa de Villa Domínico, en las márgenes del Río de la Plata, descargando los camiones en el barro, como podíamos. 
+                la costa de Villa Domínico, en las márgenes del Río de la Plata, descargando los camiones en el barro,
+                como podíamos.
             </p>
             <div class="ubicacion__imagen">
-                <img class="imagen__detalles" src="../media/imagenes/camion__descarga.jpg" alt="camion y cuadrilla de descarga" title="camion post descarga">
+                <img class="imagen__detalles" src="../media/imagenes/camion__descarga.jpg"
+                    alt="camion y cuadrilla de descarga" title="camion post descarga">
             </div>
-            
-            <p class="cuerpo__texto">
+
+            <p class="cuerpo__textoNosotros">
                 Posteriormente, trasladamos nuestro
-                emprendimiento a Wilde, también en el partido de Avellaneda, donde nos afincamos y establecimos un local de venta al público.
-                Con el tiempo decidimos ampliar el negocio y comenzar a comercializar otras bebidas tales como whisky, ginebra o ron, entre otras.
+                emprendimiento a Wilde, también en el partido de Avellaneda, donde nos afincamos y establecimos un local
+                de venta al público.
+                Con el tiempo decidimos ampliar el negocio y comenzar a comercializar otras bebidas tales como whisky,
+                ginebra o ron, entre otras.
             </p>
             <div class="ubicacion__imagendos">
-                <img class="imagen__detalles" src="../media/imagenes/damajuanas__apiladas.jpeg" alt="damajuanas apiladas" title="pila de damajuanas">
+                <img class="imagen__detalles" src="../media/imagenes/damajuanas__apiladas.jpeg"
+                    alt="damajuanas apiladas" title="pila de damajuanas">
             </div>
-            <p class="cuerpo__texto">
-                A continuación te dejamos la ubicación de nuestro local de Wilde. Gracias por tu visita. 
+            <p class="cuerpo__textoNosotros">
+                A continuación te dejamos la ubicación de nuestro local de Wilde. Gracias por tu visita.
             </p>
             <div class="cuerpo__ubicacion">
                 <iframe class="ubicacion__mapa"
@@ -135,9 +100,40 @@
         </div>
     </main>
     <footer>
-        <div class="pieDePagina container-fluid">
+        <div class="pieDePagina">
+            <div class="titulo__contenedorRedes">
+                <ul class="titulo__redes">
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://www.facebook.com/vinotecaroberto" target="_blank"
+                            title="facebook">
+                            <img class="iconos__facebook" src="../media/imagenes/facebook.png" alt="facebook"
+                                title="facebook">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://www.instagram.com/vinotecaroberto/" target="_blank"
+                            title="instagram">
+                            <img class="iconos__instagram" src="../media/imagenes/instagram.png" alt="instagram"
+                                title="instagram">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://wa.me/5491135880974" target="_blank" title="whatsapp">
+                            <img class="iconos__whatsapp" src="../media/imagenes/whatsapp.png" alt="whatsapp"
+                                title="whatsapp">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://listado.mercadolibre.com.ar/vinoteca-roberto-wilde"
+                            target="_blank" title="mercado libre">
+                            <img class="iconos__mercadoLibre" src="../media/imagenes/mercadolibre.png"
+                                alt="mercado libre" title="mercado libre">
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="pieDePagina__contenedor ">
-                <ul class="contenedor__listado row">
+                <ul class="contenedor__listado">
                     <li class="listado__textoPieDePagina">
                         <p class="textoPieDePagina__parrafo">©2023-2024 Todos los derechos reservados Vinoteca Roberto
                         </p>
@@ -149,6 +145,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="../js/principal.js"></script>
 </body>
 
 </html>

@@ -19,91 +19,51 @@
 
 <body>
     <header>
-        <div class="cabecera container-fluid">
-            <div class="cabecera__titulo row">
-                <div class="titulo__contenedorRedes col-4">
-                    <ul class="titulo__redes">
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://www.facebook.com/vinotecaroberto" target="_blank"
-                                title="facebook">
-                                <img class="iconos__facebook" src="../media/imagenes/facebook2.png" alt="facebook"
-                                    title="facebook">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://www.instagram.com/vinotecaroberto/" target="_blank"
-                                title="instagram">
-                                <img class="iconos__instagram" src="../media/imagenes/instagram.png" alt="instagram"
-                                    title="instagram">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://wa.me/5491135880974" target="_blank"
-                                title="whatsapp">
-                                <img class="iconos__whatsapp" src="../media/imagenes/whatsapp2.png" alt="whatsapp"
-                                    title="whatsapp">
-                            </a>
-                        </li>
-                        <li class="redes__iconos">
-                            <a class="iconos__texto" href="https://listado.mercadolibre.com.ar/vinoteca-roberto-wilde"
-                                target="_blank" title="mercadolibre">
-                                <img class="iconos__mercadoLibre" src="../media/imagenes/mercado_libre.png"
-                                    alt="mercado libre" title="mercadolibre">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="titulo__vacia col-6">
-                    <h1 class="vacia__texto">
-                        VR Vinos
-                    </h1>
-                </div>
-                <div class="titulo__insignia col-2">
-                    <a class="insignia__logo" href="../index.html" title="index">
-                        <img class="logo__img" src="../media/imagenes/logo2.png" alt="logo vr vinos" title="vr vinos">
-                    </a>
-                </div>
-            </div>
-            <div class="cabecera__menu row navbar navbar-expand-sm navbar-dark bg-primary">
-                <button class="menu__boton navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#opciones" name="button">
-                    <div class="boton__icono navbar-toggler-icon"></div>
-                </button>
-
-                <div class="menu__contenedor collapse navbar-collapse" id="opciones">
-                    <ul class="menu__listado row navbar-nav">
-                        <li class="listado__items col-2 nav-item">
-                            <a class="items__enlace nav-link" href="../index.html" title="index">
-                                Inicio
-                            </a>
-                        </li>
-                        <li class="listado__items col-2 nav-item">
-                            <a class="items__enlace" href="../pages/catalogo.html" title="catalogo">
-                                Catálogo
-                            </a>
-                        </li>
-                        <li class="listado__items col-3 nav-item">
-                            <a class="items__enlace" href="../pages/proveedores.html" title="proveedores">
-                                Proveedores
-                            </a>
-                        </li>
-                        <li class="listado__items col-4 nav-item">
-                            <a class="items__enlace" href="../pages/nosotros.html" title="nosotros">
-                                Sobre Nosotros
-                            </a>
-                        </li>
-                        <li class="listado__items col-1 nav-item">
-                            <a class="items__enlace" href="#" title="contacto">
-                                Contacto
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="logo">
+            <a class="logo__enlace" href="../index.html" title="inicio">
+                <img class="logo__imagen" src="../media/imagenes/logo_vinoteca_blanco.png" alt="vinoteca Roberto" title="vinoteca roberto">
+            </a>
+        </div>
+        <div class="encabezado">
+            <button id="abrir" class="encabezado__abrir">
+                <img class="abrir__imagen" src="../media/imagenes/boton__apertura__menu.png" alt="abrir menu" title="abrir menu">
+            </button>
+            <div id="nav" class="encabezado__menu">
+                <ul class="menu__listado">
+                    <button id="cerrar" class="listado__cerrar">
+                        <img class="cerrar__imagen" src="../media/imagenes/boton__cierre__menu.png" alt="cerrar menu" title="cerrar menu">
+                    </button>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../index.html" title="inicio">
+                            INICIO
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/catalogo.html" title="contacto">
+                            CATÁLOGO
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/proveedores.html" title="proveedores">
+                            PROVEEDORES
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/nosotros.html" title="nosotros">
+                            SOBRE NOSOTROS
+                        </a>
+                    </li>
+                    <li class="listado__items">
+                        <a class="items__enlace" href="../pages/contacto.html" title="contacto">
+                            CONTACTO
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
-    <main class="container-fluid principal">
-        <div class="principal__cuerpo">
+    <main class="principal">
+        <div class="principal__cuerpoFormulario">
             <p class="cuerpo__parrafo">
                 ¿Llevás mucho tiempo buscando esa bebida que te encandiló esa noche de fiesta con tus amigos?
             </p>
@@ -114,54 +74,71 @@
                 ¿Te quedaste sin vino para dar la misa del domingo?
             </p>
             <p class="cuerpo__parrafo">
-                Vinoteca Roberto es tu lugar, completá tus datos y mandanos tu consulta, 
+                Vinoteca Roberto es tu lugar, completá tus datos y mandanos tu consulta,
                 responderemos más rápido de lo que descorchás una botellita de vino.
             </p>
 
             <form class="principal__formulario" action="#">
-                <div class="formulario__cajas row">
-                    <div class="col-3"></div>
-                    <label class="formulario__label col-2" for="nombre">Nombre</label>
-                    <input class="col-4" type="text" id="nombre" name="nombre">
-                    <div class="col-3"></div>
+                <div class="formulario__cajas">
+                    <label class="formulario__label" for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
                 </div>
-                <div class="formulario__cajas row">
-                    <div class="col-3"></div>
-                    <label class="formulario__label col-2" for="apellidos">Apellidos</label>
-                    <input class="col-4" type="text" id="apellidos" name="apellidos">
-                    <div class="col-3"></div>
+                <div class="formulario__cajas">
+                    <label class="formulario__label" for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos">
                 </div>
-                <div class="formulario__cajas row">
-                    <div class="col-3"></div>
-                    <label class="formulario__label col-2" for="mail">E-mail</label>
-                    <input class="col-4" type="email" id="mail" name="mail">
-                    <div class="col-3"></div>
+                <div class="formulario__cajas">
+                    <label class="formulario__label" for="mail">E-mail</label>
+                    <input type="email" id="mail" name="mail">
                 </div>
-                <div class="formulario__cajas row">
-                    <div class="col-3"></div>
-                    <label class="formulario__label col-6" for="textoConsulta">
+                <div class="formulario__cajas">
+                    <label class="formulario__label" for="textoConsulta">
                         Envianos tu consulta y a la brevedad responderemos
                     </label>
-                    <div class="col-3"></div>
-                </div>
-                <div class="formulario__cajas row">
-                    <div class="col-3"></div>
-                    <textarea class="formulario__textarea col-6" id="textoConsulta" rows="5" name="area de texto">
+                    <textarea class="formulario__textarea" id="textoConsulta" rows="5" name="area de texto">
                     </textarea>
-                    <div class="col-3"></div>
                 </div>
-                <div class="formulario__cajas row">
-                    <div class="col-3"></div>
-                    <input class="col-6" type="submit" value="Enviar consulta">
-                    <div class="col-3"></div>
+                <div class="formulario__cajas">
+                    <input class="formulario__boton" type="submit" value="Enviar consulta">
                 </div>
             </form>
         </div>
     </main>
     <footer>
-        <div class="pieDePagina container-fluid">
+        <div class="pieDePagina">
+            <div class="titulo__contenedorRedes">
+                <ul class="titulo__redes">
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://www.facebook.com/vinotecaroberto" target="_blank"
+                            title="facebook">
+                            <img class="iconos__facebook" src="../media/imagenes/facebook.png" alt="facebook"
+                                title="facebook">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://www.instagram.com/vinotecaroberto/" target="_blank"
+                            title="instagram">
+                            <img class="iconos__instagram" src="../media/imagenes/instagram.png" alt="instagram"
+                                title="instagram">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://wa.me/5491135880974" target="_blank" title="whatsapp">
+                            <img class="iconos__whatsapp" src="../media/imagenes/whatsapp.png" alt="whatsapp"
+                                title="whatsapp">
+                        </a>
+                    </li>
+                    <li class="redes__iconos">
+                        <a class="iconos__texto" href="https://listado.mercadolibre.com.ar/vinoteca-roberto-wilde"
+                            target="_blank" title="mercado libre">
+                            <img class="iconos__mercadoLibre" src="../media/imagenes/mercadolibre.png"
+                                alt="mercado libre" title="mercado libre">
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="pieDePagina__contenedor ">
-                <ul class="contenedor__listado row">
+                <ul class="contenedor__listado">
                     <li class="listado__textoPieDePagina">
                         <p class="textoPieDePagina__parrafo">©2023-2024 Todos los derechos reservados Vinoteca Roberto
                         </p>
@@ -173,6 +150,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="../js/principal.js"></script>
 </body>
 
 </html>

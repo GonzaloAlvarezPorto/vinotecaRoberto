@@ -1,0 +1,20 @@
+@media (max-width: 555px) {
+
+    .principal__cuerpoCatalogo {
+        .principal__catalogo {
+            .catalogo__bodega {
+                .bodega__productos {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .catalogo__producto {
+
+                        .producto__texto {
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
