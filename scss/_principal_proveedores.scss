@@ -1,7 +1,7 @@
 .principal__cuerpoProveedor {
     min-height: 650px;
     width: 100%;
-    @include niPaddingNiMargin(0, 0);
+    
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -11,12 +11,12 @@
         display: flex;
         justify-content: left;
         flex-direction: column;
-        @include niPaddingNiMargin(0, 0);
+        
 
         .proveedor__info {
             display: flex;
             flex-direction: row;
-            @include niPaddingNiMargin(0, 0);
+            
             border-bottom: solid 1px white;
 
             .proveedor__media {
@@ -25,7 +25,7 @@
                 padding: 15px;
 
                 .media__enlace {
-                    @include niPaddingNiMargin(0, 0);
+                    
                     display: flex;
                     flex-direction: column;
                     justify-content: center;

@@ -4,8 +4,7 @@ header {
 
     .cabecera {
         background-color: #351a02;
-        @include niPaddingNiMargin(0, 0);
-
+        
         .cabecera__titulo {
             background-image: $imagenCabecera;
             background-size: 100% 100%;
@@ -14,7 +13,7 @@ header {
             height: 40px;
 
             .titulo__contenedorRedes {
-                @include niPaddingNiMargin(0, 0);
+                
                 height: 100%;
 
                 .titulo__redes {
@@ -61,13 +60,13 @@ header {
             }
 
             .titulo__vacia {
-                @include niPaddingNiMargin(0, 0);
+                
                 height: 40px;
                 display: flex;
                 justify-content: center;
 
                 .vacia__texto {
-                    @include niPaddingNiMargin(0, 0);
+                    
                     color: white;
                     height: 100%;
                     text-shadow: 3px 3px 4px black;
@@ -76,7 +75,7 @@ header {
             }
 
             .titulo__insignia {
-                @include niPaddingNiMargin(0, 0);
+                
                 height: 40px;
 
                 .insignia__logo {
@@ -84,7 +83,7 @@ header {
                     justify-content: center;
 
                     .logo__img {
-                        @include niPaddingNiMargin(0, 0);
+                        
                         height: 40px;
                         
                         &:hover {

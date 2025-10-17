@@ -1,7 +1,7 @@
 .principal__cuerpoNosotros {
     min-height: 650px;
     width: 100%;
-    @include niPaddingNiMargin(0, 0);
+    
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -36,14 +36,14 @@
 
     .cuerpo__ubicacion {
         width: 100%;
-        @include niPaddingNiMargin(0, 0);
+        
         display: flex;
         justify-content: center;
         align-items: center;
 
         .ubicacion__mapa {
             width: 50%;
-            @include niPaddingNiMargin(0, 0);
+            
             padding-bottom: 2rem;
         }
     }

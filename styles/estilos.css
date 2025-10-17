@@ -6,39 +6,39 @@
 }
 
 header {
-  padding: 0;
-  margin: 0;
   background-color: rgb(42, 53, 38);
   position: sticky;
   top: 0px;
   display: flex;
   flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
 }
 header .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 30%;
-  padding: 0.5rem;
 }
 header .logo .logo__enlace {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+header .logo .logo__enlace .logo__imagen {
   padding: 0.4rem;
   background-color: rgb(9, 24, 4);
   border-radius: 90px;
-}
-header .logo .logo__enlace .logo__imagen {
   height: 48px;
 }
-header .logo .logo__enlace .logo__imagen:hover {
-  transform: scale(1.1);
-  transition: 2s;
+header .logo .logo__enlace .logo__texto {
+  padding: 0.4rem;
+  height: 60px;
 }
 header .encabezado {
-  padding: 0;
-  margin: 0;
-  width: 70%;
-  padding: 0.5rem;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -47,18 +47,13 @@ header .encabezado .encabezado__abrir {
   display: none;
 }
 header .encabezado .encabezado__menu {
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: end;
 }
 header .encabezado .encabezado__menu .menu__listado {
   display: flex;
-  justify-content: space-around;
-  list-style-type: none;
   gap: 1rem;
   text-align: center;
-  padding: 1rem;
   margin: 0;
 }
 header .encabezado .encabezado__menu .menu__listado .listado__cerrar {
@@ -66,15 +61,10 @@ header .encabezado .encabezado__menu .menu__listado .listado__cerrar {
   padding: 0.5rem;
 }
 header .encabezado .encabezado__menu .menu__listado .listado__items {
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
 }
 header .encabezado .encabezado__menu .menu__listado .listado__items .items__enlace {
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
   text-decoration: none;
   color: rgb(159, 185, 146);
   display: flex;
@@ -83,11 +73,14 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   font-weight: bold;
 }
 header .encabezado .encabezado__menu .menu__listado .listado__items .items__enlace:hover {
-  color: rgb(89, 139, 89);
-  transition: 2s;
+  color: rgb(200, 211, 200);
+  transition: 0.5s;
 }
 
 @media (max-width: 950px) {
+  header .logo .logo__enlace .logo__texto {
+    display: none;
+  }
   header .encabezado {
     display: flex;
     justify-content: end;
@@ -118,22 +111,25 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   header .encabezado .encabezado__menu .menu__listado {
     flex-direction: column;
     align-items: end;
-    padding: 0;
     width: 100%;
+    padding: 0.5rem 2rem;
   }
   header .encabezado .encabezado__menu .menu__listado .listado__cerrar {
     display: block;
     border: none;
     background-color: rgb(42, 53, 38);
+    padding: 0;
   }
   header .encabezado .encabezado__menu .menu__listado .listado__cerrar .cerrar__imagen {
     height: 60px;
     border: none;
     padding: 1rem;
   }
+  header .encabezado .encabezado__menu .menu__listado .listado__items {
+    padding: 0.5rem;
+  }
   header .encabezado .encabezado__menu .menu__listado .listado__items .items__enlace {
     font-size: 16px;
-    padding: 1rem;
   }
   header .encabezado .encabezado__menu.visible {
     opacity: 1;
@@ -149,8 +145,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__cuerpoInicio {
   min-height: 650px;
   width: 100%;
-  padding: 0;
-  margin: 0;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -186,15 +180,11 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__cuerpoCatalogo {
   min-height: 650px;
   width: 100%;
-  padding: 0;
-  margin: 0;
   padding: 1rem;
   display: flex;
   justify-content: center;
 }
 .principal__cuerpoCatalogo .principal__catalogo {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -221,8 +211,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   justify-content: center;
 }
 .principal__cuerpoCatalogo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,8 +229,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   text-shadow: 3px 3px 4px black;
 }
 .principal__cuerpoCatalogo .principal__catalogo .catalogo__bodega .bodega__productos .catalogo__producto .producto__enlace {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,8 +250,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__cuerpoFormulario {
   min-height: 650px;
   width: 100%;
-  padding: 0;
-  margin: 0;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -326,8 +310,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__cuerpoNosotros {
   min-height: 650px;
   width: 100%;
-  padding: 0;
-  margin: 0;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -358,24 +340,18 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 }
 .principal__cuerpoNosotros .cuerpo__ubicacion {
   width: 100%;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .principal__cuerpoNosotros .cuerpo__ubicacion .ubicacion__mapa {
   width: 50%;
-  padding: 0;
-  margin: 0;
   padding-bottom: 2rem;
 }
 
 .principal__cuerpoProveedor {
   min-height: 650px;
   width: 100%;
-  padding: 0;
-  margin: 0;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -385,14 +361,10 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   display: flex;
   justify-content: left;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
 }
 .principal__cuerpoProveedor .cuerpo__proveedor .proveedor__info {
   display: flex;
   flex-direction: row;
-  padding: 0;
-  margin: 0;
   border-bottom: solid 1px white;
 }
 .principal__cuerpoProveedor .cuerpo__proveedor .proveedor__info .proveedor__media {
@@ -401,8 +373,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   padding: 15px;
 }
 .principal__cuerpoProveedor .cuerpo__proveedor .proveedor__info .proveedor__media .media__enlace {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -447,13 +417,9 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
 }
 .pieDePagina {
-  padding: 0;
-  margin: 0;
   background-color: rgb(42, 53, 38);
 }
 .pieDePagina .titulo__contenedorRedes {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -496,8 +462,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   background-color: rgb(255, 251, 0);
 }
 .pieDePagina .pieDePagina__contenedor {
-  padding: 0;
-  margin: 0;
   padding: 1rem;
 }
 .pieDePagina .pieDePagina__contenedor .contenedor__listado {
@@ -505,20 +469,14 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   text-decoration: none;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
-  margin: 0;
 }
 .pieDePagina .pieDePagina__contenedor .contenedor__listado .listado__textoPieDePagina {
-  padding: 0;
-  margin: 0;
   display: flex;
   text-decoration: none;
   font-weight: bold;
   text-shadow: 1px 1px 25px black;
 }
 .pieDePagina .pieDePagina__contenedor .contenedor__listado .listado__textoPieDePagina .textoPieDePagina__parrafo {
-  padding: 0;
-  margin: 0;
   text-align: center;
   font-size: 20px;
   padding: 7px 0;

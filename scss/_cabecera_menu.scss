@@ -1,39 +1,43 @@
+@use "_variables" as *;
+
 header {
-    @include niPaddingNiMargin(0, 0);
     background-color: $colorEyF;
     position: sticky;
     top: 0px;
     display: flex;
     flex-direction: row;
-    
+    height: 80px;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+
     .logo {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 30%;
-        padding: 0.5rem;
-        
+
         .logo__enlace {
-            padding: 0.4rem;
-            background-color: rgb(9, 24, 4);
-            border-radius: 90px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
 
             .logo__imagen {
+                padding: 0.4rem;
+                background-color: rgb(9, 24, 4);
+                border-radius: 90px;
                 height: 48px;
-
-                &:hover {
-                    transform: scale(1.1);
-                    transition: 2s;
-                }
+            }
+            
+            .logo__texto {
+                padding: 0.4rem;
+                height: 60px;
             }
         }
     }
 
     .encabezado {
-        @include niPaddingNiMargin(0, 0);
-        width: 70%;
-        padding: 0.5rem;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -43,42 +47,37 @@ header {
         }
 
         .encabezado__menu {
-            @include niPaddingNiMargin(0, 0);
+
             display: flex;
             justify-content: end;
 
             .menu__listado {
                 display: flex;
-                justify-content: space-around;
-                list-style-type: none;
                 gap: 1rem;
                 text-align: center;
-                padding: 1rem;
                 margin: 0;
-                
+
                 .listado__cerrar {
                     display: none;
                     padding: 0.5rem;
                 }
-                
+
                 .listado__items {
-                    @include niPaddingNiMargin(0, 0);
+
                     display: flex;
                     justify-content: center;
-                    
+
                     .items__enlace {
-                        @include niPaddingNiMargin(0, 0);
-                        flex-direction: column;
                         text-decoration: none;
                         color: rgb(159, 185, 146);
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         font-weight: bold;
-                        
+
                         &:hover {
-                            color: rgb(89, 139, 89);
-                            transition: 2s;
+                            color: rgb(200, 211, 200);
+                            transition: 0.5s;
                         }
                     }
                 }

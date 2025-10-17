@@ -1,13 +1,16 @@
+@use "_variables" as *;
+@use "_mixins" as *;
+
 .principal__cuerpoCatalogo {
     min-height: 650px;
     width: 100%;
-    @include niPaddingNiMargin(0, 0);
+    
     padding: 1rem;
     display: flex;
     justify-content: center;
 
     .principal__catalogo {
-        @include niPaddingNiMargin(0, 0);
+        
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -34,7 +37,7 @@
                 justify-content: center;
 
                 .catalogo__producto {
-                    @include niPaddingNiMargin(0, 0);
+                    
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -55,7 +58,7 @@
                     }
 
                     .producto__enlace {
-                        @include niPaddingNiMargin(0, 0);
+                        
                         display: flex;
                         flex-direction: column;
                         justify-content: center;

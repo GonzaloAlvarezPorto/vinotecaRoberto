@@ -1,5 +1,15 @@
+@use "_variables" as *;
+
 @media (max-width:950px) {
     header {
+
+        .logo{
+            .logo__enlace{
+                .logo__texto{
+                    display: none;
+                }
+            }
+        }
         .encabezado {
             display: flex;
             justify-content: end;
@@ -32,13 +42,14 @@
                 .menu__listado {
                     flex-direction: column;
                     align-items: end;
-                    padding: 0;
                     width: 100%;
+                    padding: 0.5rem 2rem;
 
                     .listado__cerrar {
                         display: block;
                         border: none;
                         background-color: $colorEyF;
+                        padding: 0;
 
                         .cerrar__imagen {
                             height: 60px;
@@ -48,9 +59,9 @@
                     }
 
                     .listado__items {
+                        padding: 0.5rem;
                         .items__enlace {
                             font-size: 16px;
-                            padding: 1rem;
                         }
                     }
                 }

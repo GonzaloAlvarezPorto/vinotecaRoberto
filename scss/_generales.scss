@@ -1,3 +1,5 @@
+@use "_mixins" as *;
+
 * {
     @include niPaddingNiMargin(0,0);
     transition: 0.3s;
